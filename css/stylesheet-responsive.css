@@ -1,0 +1,38 @@
+@media all and (max-width:768px) {
+  /*  .mobile-nav-button {
+      display: block;
+    }*/
+
+  .nav-menu {
+    display: none;
+    height: auto;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 90px;
+  }
+
+  .nav-menu ul {
+    background-color: #3f3f3f;
+    height: auto;
+  }
+
+  .nav-menu ul li {
+    border-bottom: 1px dotted #ffffff;
+    width: 100%;
+  }
+
+  .first-nav .nav-menu ul li > a {
+    color: #ffffff;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 380px){
+  #image-gallery .col-xxs-12 {
+    width:100%;
+  }
+  #image-gallery .col-xxs-12 img {
+    width:100%;
+  }
+}
