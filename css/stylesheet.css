@@ -1039,10 +1039,14 @@ SOF Catholic Church section Css
   display: block;
 }
 
+.cath-church-elments-wrapper .map-wrapper {
+  position: relative;
+}
+
 #timeline-loader {
   display: none;
   height: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;

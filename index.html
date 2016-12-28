@@ -121,16 +121,6 @@
       </div>
       <!-- End Home Inner Details -->
     </div>
-		<!-- Home Bottom Note -->
-		<!--<div class="home-extra-note fullwidth t-center white thin absolute" data-0="opacity:1;" data-600="opacity:0;">
-			<!-- Text Link --
-			<a href="#about" class="scroll">
-				<!-- Bottom Button --
-				<span class="home-button dark-button t-center home-circle-button fa fa-angle-down"></span>
-			</a>
-			<!-- End Text Link --
-		</div>-->
-		<!-- End Home Bottom Note -->
 	</section>
 	<!-- End Home Section -->
 	
@@ -177,7 +167,7 @@
       
       <!--Seven Sacraments-->
       <div id="seven-sacraments" class="sacraments-wrapper">
-        <h1 class="header section-title"><div class="vertical-middle-title">The <span>7</span> Sacraments</div></h1>
+        <h1 class="header section-title"><span class="vertical-middle-title"> The <span>7</span> Sacraments</span></h1>
         <div class="row row-first">
           <ul class="sacraments-list clearfix">
             <li class="sacrament-list-item item1 baptism">
@@ -307,7 +297,7 @@
         <h3 class="t-center uppercase">From Dusty Volumes To Databases</h3>
         <div class="slideshow-wrapper">
           <a href="#" alt="Slideshow" data-toggle="modal" data-target="#myModal">
-            <img src="images/slider-images/slider-image6.jpg" alt="Lowell Bott Mill">
+            <img src="images/slider-images/slider-image6.jpg" alt="Lowell Bott Mill" />
               <div class="button-container">
                 <button class="slideshow-btn btn site-button">
                   <i class="fa fa-clone btn-icon" aria-hidden="true"></i>
@@ -519,28 +509,24 @@
       <h1 class="header section-title">Growth of the Catholic Church in Greater Boston</h1>
 
       <div class="cath-church-elments-wrapper">
-        <div id="map"></div>
-        
+        <div class="map-wrapper">
+          <div id="map"></div>
+          <div id="timeline-loader" class="tm-loader">
+            <div class="square">
+              <div class="square-one"></div>
+              <div class="square-two"></div>
+              <div class="square-three"></div>
+            </div>
+          </div>
+        </div>
         <div id="timeline-links" class="timeline-wrapper">
           <!--<input id="timeline" type="text"/>-->
           <input type="text" class="span2" value="" data-slider-min="1780" data-slider-max="1900" data-slider-step="1" data-slider-id="BC" id="B" data-slider-tooltip="hide" data-slider-handle="triangle" />
         </div>
         
-        <!--<div id="timeline-links" class="timeline-wrapper">
-          <ul id="timeline-list" class="year-tab">
-            <li id="parish_1780_1829" class="year-link"><a href="javascript:void(0);" class="active">1780-1829</a></li>
-            <li id="parish_1830_1839" class="year-link"><a href="javascript:void(0);">1830-1839</a></li>
-            <li id="parish_1840_1849" class="year-link"><a href="javascript:void(0);">1840-1849</a></li>
-            <li id="parish_1850_1859" class="year-link"><a href="javascript:void(0);">1850-1859</a></li>
-            <li id="parish_1860_1869" class="year-link"><a href="javascript:void(0);">1860-1869</a></li>
-            <li id="parish_1870_1879" class="year-link"><a href="javascript:void(0);">1870-1879</a></li>
-            <li id="parish_1880_1889" class="year-link"><a href="javascript:void(0);">1880-1889</a></li>
-            <li id="parish_1890_1900" class="year-link"><a href="javascript:void(0);">1890-1900</a></li>
-          </ul>
-        </div>-->
         
         <div id="timeline-btm-content-wrapper" class="tm-slider-botttom-wrapper">
-          <div id="parish_1780_1829" class="row active">    
+          <div id="parish_1780_1789" class="row active">    
             <div class="col-lg-6">
               <div id="timeline-slider1" class="carousel slide">
                 <!-- Wrapper for slides -->
@@ -569,10 +555,13 @@
               </div> 
             </div>
             <div class="col-lg-6">
-              <p>The Massachusetts constitution legalizes Catholicism in 1780. A parish of French and Irish Catholics begin worshipping in a small brick French Protestant meeting house located on the south side of School Street in Boston. It’s there that the first public mass is celebrated in 1788. These early sacramental records include the first official Catholic baptisms in Boston, in this case presided over by the French priest Florent Bouchard de la Poterie, who will later be deposed for “unworthy conduct.”</p>
+              <p>
+                The Massachusetts constitution legalizes Catholicism in 1780. A parish of French and Irish Catholics begin worshipping in a small brick French Protestant meeting house located on the south side of School Street in Boston. It’s there that the first public mass is celebrated in 1788.
+                These early sacramental records include the first official Catholic baptisms in Boston, in this case presided over by the French priest Florent Bouchard de la Poterie, who will later be deposed for “unworthy conduct.”
+              </p>
             </div>
           </div>
-          <div id="parish_1830_1839" class="row">
+          <div id="parish_1790_1799" class="row">
             <div class="col-lg-6">
               <div id="timeline-slider2" class="carousel slide">
                 <!-- Wrapper for slides -->
@@ -584,10 +573,15 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <p>
+                Catholics remain scattered across eastern Massachusetts. A report made to Bishop Carroll during this time states that there are only 210 Catholics in Boston, 
+                15 in Plymouth, 21 in Newburyport, and 3 in Salem. An epidemic of yellow fever strikes Boston (along with New York City and Philadelphia) hard in the summer of 1798, 
+                killing thousands. Fathers Cheverus and Matignon tirelessly care for the sick, earning praise and respect from Protestants and Catholics alike. 
+                Planning for the construction of the Holy Cross Church begins in 1799.
+              </p>
             </div>
           </div>
-          <div id="parish_1840_1849" class="row">
+          <div id="parish_1800_1809" class="row">
             <div class="col-lg-6">
               <div id="timeline-slider3" class="carousel slide">
                 <!-- Wrapper for slides -->
@@ -599,10 +593,16 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <p>Duis nec velit urna. Vestibulum finibus, nunc eu suscipit eleifend, odio erat lacinia ligula, eget scelerisque dolor orci vitae nunc. Duis molestie, quam et venenatis dignissim, est sapien interdum velit, eu ornare leo odio a risus. Quisque dictum tincidunt ligula, id condimentum ante condimentum eget. Quisque vitae tempor ante. Morbi mattis, lectus nec porttitor pharetra, eros metus convallis ante, vitae pellentesque nunc arcu vel dolor. Mauris felis odio, vulputate in blandit ut, pharetra venenatis enim</p>
+              <p>
+                Leading Protestant public figures and families, including John Adams, donate generously to the construction of Boston’s first Catholic Church, 
+                which is planned by celebrated architect Charles Bulfinch, who designed Boston’s State House and Washington DC’s capitol. 
+                The Holy Cross Church is dedicated in September 29, 1803 by Bishop Carroll, who has traveled from Baltimore for the occasion. 
+                Bishop Carroll’s visit invigorates the local Catholic community and by 1805, the congregation has grown to 500. 
+                Father Cheverus is appointed Bishop of Boston in 1808, and the Diocese of Boston is officially established.
+              </p>
             </div>
           </div>
-          <div id="parish_1850_1859" class="row">
+          <div id="parish_1810_1819" class="row">
             <div class="col-lg-6">
               <div id="timeline-slider4" class="carousel slide">
                 <!-- Wrapper for slides -->
@@ -617,7 +617,7 @@
               <p>Aenean vulputate enim eu massa euismod sodales. Pellentesque mollis justo eget odio sagittis pulvinar. Praesent enim nibh, rutrum eu efficitur a, accumsan quis ante. Morbi fringilla lorem non dui mattis, eget pharetra diam ultricies. Vivamus interdum nisi non est tempus, sit amet posuere erat lobortis. Proin fermentum erat id dolor condimentum, quis condimentum velit commodo. Etiam vel ligula mi. Nunc neque lacus, vestibulum eget nulla vitae, eleifend blandit elit.</p>
             </div>
           </div>
-          <div id="parish_1860_1869" class="row">
+          <div id="parish_1820_1829" class="row">
             <div class="col-lg-6">
               <div id="timeline-slider5" class="carousel slide">
                 <!-- Wrapper for slides -->
@@ -629,10 +629,15 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <p>Nullam elit eros, facilisis at euismod sit amet, commodo ac dui. Cras vel faucibus sem. Etiam facilisis turpis ac elit vulputate, eget dapibus urna rutrum. Integer convallis ut nisl et malesuada. Pellentesque auctor magna fermentum consectetur consectetur. Morbi at pharetra arcu. Pellentesque arcu arcu, aliquam ut facilisis sed, vestibulum eu turpis. Vivamus consequat efficitur nibh, id fringilla felis semper vel.</p>
+              <p>
+                In 1822, Boston changes its status from town to city. Infrastructure improvement projects begin in earnest. 
+                Roads and sewers are rebuilt, and the city’s docks are organized into a vital business hub around Faneuil Hall, 
+                which is expanded in 1826 to include Quincy Market, designed in the highly popular Greek Revival architectural style. 
+                More Catholic churches spring up in nearby towns, including Immaculate Conception (1826) in Salem, Saint Mary (1828) in Charlestown, and Saint Patrick (1831) in Lowell.
+              </p>
             </div>
           </div>
-          <div id="parish_1870_1879" class="row">
+          <div id="parish_1830_1839" class="row">
             <div class="col-lg-6">
               <div id="timeline-slider6" class="carousel slide">
                 <!-- Wrapper for slides -->
@@ -644,10 +649,15 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <p>Sed interdum volutpat felis, et pretium ante eleifend quis. Aenean posuere dictum nunc. Quisque id nunc vitae diam ultricies luctus sit amet nec lacus. Donec imperdiet vitae est sed consequat. Nulla placerat, est quis rhoncus hendrerit, felis dui lacinia velit, eu dignissim est diam sit amet arcu. Praesent eget purus et magna luctus lobortis quis a tortor. Fusce auctor, tortor a suscipit commodo, tortor quam ullamcorper nisi, eget tempor diam nisl id massa.</p>
+              <p>
+                A steady number of Catholic immigrants settling in and around Boston results in new churches in Roxbury, Waltham and Quincy. 
+                While Irish priests try their best to minister to all Catholics, newly arrived immigrants from other countries – including Germany -- prefer 
+                to practice their faith in their own language. Bishop Benedict Joseph Fenwick requests German priests and several arrive in Boston, 
+                but all choose to move on to the Midwest where they can serve larger German Catholic parishes.
+              </p>
             </div>
           </div>
-          <div id="parish_1880_1889" class="row">
+          <div id="parish_1840_1849" class="row">
             <div class="col-lg-6">
               <div id="timeline-slider7" class="carousel slide">
                 <!-- Wrapper for slides -->
@@ -659,10 +669,15 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <p>Pellentesque facilisis, sem in auctor venenatis, enim ex porta quam, ut sollicitudin quam risus vel augue. Sed tincidunt est eleifend malesuada posuere. Etiam a est luctus, dictum nisi eget, imperdiet libero. Maecenas ut finibus nunc, non dapibus eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed volutpat iaculis nibh eu aliquam. In hac habitasse platea dictumst. Mauris euismod arcu a laoreet ullamcorper.</p>
+              <p>
+                Ireland’s potato famine, which begins in 1845, drives tens of thousands of working-class Irish to Boston’s shores. 
+                During this decade, the city’s population balloons from 93,000 to 136,000, a trend that will continue into the next century. 
+                More Catholic churches are built to accommodate the new arrivals, including one in the South Shore (St. Mary, 1840, Quincy/Norfolk County) 
+                and Southern MA (Saint Thomas Aquinas, 1848, Bridgewater/Plymouth County).
+              </p>
             </div>
           </div>
-          <div id="parish_1890_1900" class="row">
+          <div id="parish_1850_1859" class="row">
             <div class="col-lg-6">
               <div id="timeline-slider8" class="carousel slide">
                 <!-- Wrapper for slides -->
@@ -674,15 +689,79 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <p>Fusce felis risus, interdum ac pellentesque ut, aliquet quis leo. Aliquam cursus eros vel ipsum tristique, nec accumsan nulla pretium. Donec ac consequat diam, nec suscipit nulla. Maecenas velit justo, semper ac ipsum quis, maximus cursus leo. Maecenas quam leo, dictum eget dolor a, rhoncus volutpat magna. Cras sed efficitur nunc. Aenean quis volutpat purus. Proin sollicitudin nisl sed sem consectetur, vel aliquam augue facilisis</p>
+              <p>
+                As more Catholics pour into Boston, their presence expands to the North Shore. 
+                Twenty new churches are established during this decade in the city and surrounding towns, from Marblehead to Foxboro.
+              </p>
             </div>
           </div>
-        </div>
-        <div id="timeline-loader" class="tm-loader">
-          <div class="square">
-            <div class="square-one"></div>
-            <div class="square-two"></div>
-            <div class="square-three"></div>
+          <div id="parish_1860_1869" class="row">
+            <div class="col-lg-6">
+              <div id="timeline-slider8" class="carousel slide">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="images/timeline-images/timeline-image2.jpg" alt="timeline-image8"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p>
+                Expansion continues as far north as Amesbury and as far west as Concord, while Merrimack River Valley and what is now the Metro Boston area sees an increase in parishes.
+              </p>
+            </div>
+          </div>
+          <div id="parish_1870_1879" class="row">
+            <div class="col-lg-6">
+              <div id="timeline-slider8" class="carousel slide">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="images/timeline-images/timeline-image4.jpg" alt="timeline-image8"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p>
+                Sees the first Italian Catholic parish in the United States (Saint Leonard of Port Maurice, 1873) in Boston's North End.
+              </p>
+            </div>
+          </div>
+          <div id="parish_1880_1889" class="row">
+            <div class="col-lg-6">
+              <div id="timeline-slider8" class="carousel slide">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="images/timeline-images/timeline-image6.jpg" alt="timeline-image8"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p>
+                Sees the first Portuguese parish (Our Lady of Good Voyage, 1889, Gloucester-- seems relevant to the fishing industry there).
+              </p>
+            </div>
+          </div>
+          <div id="parish_1890_1900" class="row">
+            <div class="col-lg-6">
+              <div id="timeline-slider8" class="carousel slide">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="images/timeline-images/timeline-image5.jpg" alt="timeline-image8"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p>
+                Sees first Lithuanian parish (Saint Rocco/Saint Casimir, 1898, Brockton)
+              </p>
+            </div>
           </div>
         </div>
       </div>
