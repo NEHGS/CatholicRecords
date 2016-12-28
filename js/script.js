@@ -17,15 +17,15 @@ $(document).ready(function () {
    var b = $('#B').slider({tooltip: 'always'});
 		b.data('slider');
     
-  $("#B").on("slide", function (slideEvt) {   
+  $("#B").on("slideStop", function (slideEvt) {   
     changeCarousel(slideEvt.value);      
     prepareLocations(1780, slideEvt.value, 'refresh');
   });
   
- $("#B").on("change", function(slideEvt) {   
+ /*$("#B").on("change", function(slideEvt) {   
     changeCarousel(slideEvt.value.newValue);     
      prepareLocations(1780, slideEvt.value.newValue, 'refresh');
-});
+});*/
 
   var prepareLocations = function (from, to, mode) {
    // console.log(from+'--'+to);
