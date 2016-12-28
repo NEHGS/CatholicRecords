@@ -262,13 +262,13 @@ article.section-article {
 /*--EPF Article css--*/
 
 .btn-icon {
-	vertical-align: sub;
-	font-size: 24px;
+  vertical-align: sub;
+  font-size: 24px;
 }
 
 .btn-value {
-	display: inline-block;
-	margin: 0 0 0 5px;
+  display: inline-block;
+  margin: 0 0 0 5px;
   vertical-align: text-bottom;
 }
 
@@ -277,7 +277,7 @@ article.section-article {
 }
 
 .slideshow-wrapper .btn-value {
-	display: none;
+  display: none;
 }
 
 /*=======================================
@@ -421,7 +421,7 @@ SOF Navigation Css
 
 #navigation {
   height: 70px;
-/*  position: absolute;*/
+  /*  position: absolute;*/
   position: fixed;
   top: 0;
   width: 100%;
@@ -433,7 +433,7 @@ SOF Navigation Css
   top: 0;
   left: 0;
   width: 100%;
-  transition: all 0.5s ease 0s; 
+  transition: all 0.5s ease 0s;
 }
 
 #navigation .navigation {
@@ -503,7 +503,7 @@ SOF Navigation Css
   color: #a51e2d;
 }
 
-.navigation .nav-menu ul li a:focus, 
+.navigation .nav-menu ul li a:focus,
 .navigation .nav-menu ul li.active a {
   background: transparent none repeat scroll 0 0;
 }
@@ -742,13 +742,13 @@ SOF Slideshow css
 =========================================*/
 
 #slideshow-block #slideshow-wrapper {
-	position: relative;
+  position: relative;
 }
 
 #slideshow-block .slideshow-btn.btn {
-	position: absolute;
-	left: 20px;
-	bottom: 20px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
 }
 
 #slideshow-block .slider-column {
@@ -765,7 +765,7 @@ SOF Slideshow css
 }
 
 #slideshow-block .carousel-indicators {
-	bottom: 16%;
+  bottom: 16%;
 }
 
 #slideshow-block .carousel-caption {
@@ -852,11 +852,11 @@ SOF Image Gallery
   padding:0px !important;
 }
 #image-gallery #bsPhotoGalleryModal .bsp-close {
-  position: absolute; 
-  right: -14px; 
-  top: -11px; 
-  font-size: 30px; 
-  color:#fff; 
+  position: absolute;
+  right: -14px;
+  top: -11px;
+  font-size: 30px;
+  color:#fff;
   text-shadow: 1px 1px 18px #000;
 }
 
@@ -879,8 +879,8 @@ SOF Image Gallery
   max-height: 360px;
 }
 
-#image-gallery a.bsp-controls, 
-#image-gallery a.bsp-controls:visited, 
+#image-gallery a.bsp-controls,
+#image-gallery a.bsp-controls:visited,
 #image-gallery a.bsp-controls:active {
   position: absolute;
   top: 44%;
@@ -917,7 +917,7 @@ SOF Image Gallery
   font-size: 11px;
   margin-bottom: 0px;
   padding: 0 12px 5px;
-} 
+}
 
 #image-gallery ul {
   margin: 0 0 40px;
@@ -949,9 +949,9 @@ SOF Catholic Church section Css
 
 #map {
   border: 1px solid #d3d3d3;
-/*  max-height: 400px;*/
+  /*  max-height: 400px;*/
   overflow: hidden;
-  box-shadow: 0 0 3px #ccc;   
+  box-shadow: 0 0 3px #ccc;
 }
 
 /*--Map Popup css--*/
@@ -1032,11 +1032,14 @@ SOF Catholic Church section Css
 }
 
 .tm-slider-botttom-wrapper .row {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
 }
 
 .tm-slider-botttom-wrapper .row.active {
-  display: block;
+  visibility: visible;
+  position: relative;
 }
 
 .cath-church-elments-wrapper .map-wrapper {
@@ -1112,8 +1115,8 @@ EOF Footer css
 }
 
 #BC .slider-selection {
-	background: #49686A;
+  background: #49686A;
 }
 #BC .slider-handle {
-	border-bottom-color: #BD922D;
+  border-bottom-color: #BD922D;
 }

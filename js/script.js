@@ -14,21 +14,23 @@
 
 // Show map locations.
 $(document).ready(function () {
-   var b = $('#B').slider({tooltip: 'always'});
-		b.data('slider');
-    
-  $("#B").on("slideStop", function (slideEvt) {   
-    changeCarousel(slideEvt.value);      
+  var b = $('#B').slider({tooltip: 'always'});
+  b.data('slider');
+
+  $(".tm-slider-botttom-wrapper .row:first-child").css('opacity','1');
+
+  $("#B").on("slideStop", function (slideEvt) {
+    changeCarousel(slideEvt.value);
     prepareLocations(1780, slideEvt.value, 'refresh');
   });
-  
- /*$("#B").on("change", function(slideEvt) {   
-    changeCarousel(slideEvt.value.newValue);     
-     prepareLocations(1780, slideEvt.value.newValue, 'refresh');
-});*/
+
+  /*$("#B").on("change", function(slideEvt) {
+   changeCarousel(slideEvt.value.newValue);
+   prepareLocations(1780, slideEvt.value.newValue, 'refresh');
+   });*/
 
   var prepareLocations = function (from, to, mode) {
-   // console.log(from+'--'+to);
+    // console.log(from+'--'+to);
     var locationArr = {};
     $.getJSON('json/mapdata.json', function (data) {
       $.each(data, function (i, f) {
@@ -44,11 +46,10 @@ $(document).ready(function () {
       });
       //console.log(locationArr);
       simplemaps_custommap_mapdata.locations = locationArr;
-      if(mode !== 'onload')
+      if (mode !== 'onload')
       {
         simplemaps_custommap.refresh();
-      }
-      else {
+      } else {
         simplemaps_custommap.load();
       }
     });
@@ -57,59 +58,44 @@ $(document).ready(function () {
   prepareLocations(1780, 1780, 'onload');
 
 
-  var changeCarousel = function(value) {
+  var changeCarousel = function (value) {
     var timelineId = 'parish_1780_1789';
-    if(value >= 1780 && value <= 1789) 
+    if (value >= 1780 && value <= 1789)
     {
       timelineId = 'parish_1780_1789';
-    }
-    else if (value >= 1790 && value <= 1799) {   
+    } else if (value >= 1790 && value <= 1799) {
       timelineId = 'parish_1790_1799';
-    }    
-    else if (value >= 1800 && value <= 1809) {   
+    } else if (value >= 1800 && value <= 1809) {
       timelineId = 'parish_1800_1809';
-    }    
-    else if (value >= 1810 && value <= 1819) {   
+    } else if (value >= 1810 && value <= 1819) {
       timelineId = 'parish_1810_1819';
-    }    
-    else if (value >= 1820 && value <= 1829) {   
+    } else if (value >= 1820 && value <= 1829) {
       timelineId = 'parish_1820_1829';
-    }
-    else if (value >= 1830 && value <= 1839) {   
+    } else if (value >= 1830 && value <= 1839) {
       timelineId = 'parish_1830_1839';
-    }
-    else if (value >= 1840 && value <= 1849) {   
+    } else if (value >= 1840 && value <= 1849) {
       timelineId = 'parish_1840_1849';
-    }
-    else if (value >= 1850 && value <= 1859) {   
+    } else if (value >= 1850 && value <= 1859) {
       timelineId = 'parish_1850_1859';
-    }
-    else if (value >= 1860 && value <= 1869) {   
+    } else if (value >= 1860 && value <= 1869) {
       timelineId = 'parish_1860_1869';
-    }
-    else if (value >= 1870 && value <= 1879) {   
+    } else if (value >= 1870 && value <= 1879) {
       timelineId = 'parish_1870_1879';
-    }
-    else if (value >= 1880 && value <= 1889) {   
+    } else if (value >= 1880 && value <= 1889) {
       timelineId = 'parish_1880_1889';
-    }
-    else if (value >= 1890 && value <= 1900) {   
+    } else if (value >= 1890 && value <= 1900) {
       timelineId = 'parish_1890_1900';
     }
-    
+
     $(".tm-slider-botttom-wrapper .row").removeClass('active');
-     
-        
-      
-      var fix = ('.tm-slider-botttom-wrapper .row') + '#' + timelineId;
-      //$(this).children('a').addClass('active');
-      //$(fix).addClass('active', 1000);
-      $(fix).stop(true,true).addClass("active", 1000);
+    //$(".tm-slider-botttom-wrapper .row").fadeOut();
     $("#timeline-loader").show().delay(1500).fadeOut();
-      //$(this).children('a').removeClass('active');
-      
-    
-  };
+
+    var fix = ('.tm-slider-botttom-wrapper .row') + '#' + timelineId;
+
+    $(fix).addClass('active').animate({opacity: 1.0}, 1500);
+
+  }
 });
 
 
@@ -120,7 +106,7 @@ $(document).ready(function () {
     if (!visited) {
       localStorage.setItem('visited', true);
     }
-    
+
     //Js for loader
     $("#siteloader").show().delay(1500).fadeOut();
 
@@ -139,14 +125,14 @@ $(document).ready(function () {
     }).on('mouseleave', '#seven-sacraments .row ul li', function () {
       $(this).find('.description-scroller').stop(true, true).css({marginTop: 0});
     });
-	
-	// Button mouse over.
-		$(".slideshow-wrapper button.site-button").mouseover(function() {
-			$('.slideshow-wrapper button.site-button .btn-value').show();
-		}).mouseout(function() {
-			$('.slideshow-wrapper button.site-button .btn-value').hide();
-		}); 
-	
+
+    // Button mouse over.
+    $(".slideshow-wrapper button.site-button").mouseover(function () {
+      $('.slideshow-wrapper button.site-button .btn-value').show();
+    }).mouseout(function () {
+      $('.slideshow-wrapper button.site-button .btn-value').hide();
+    });
+
 
     //Nav section scroll
     $('#navigation .nav-menu ul li a').click(function (e) {
@@ -155,7 +141,7 @@ $(document).ready(function () {
       }
       $('#navigation .nav-menu ul li a.active').removeClass('active');
       $(this).addClass('active');
-      var getID = '#'+$(this).attr('name');
+      var getID = '#' + $(this).attr('name');
       $(getID).addClass('active');
       if (windowWidth <= 480) {
         $('html, body').animate({
@@ -169,9 +155,9 @@ $(document).ready(function () {
     });
 
 
-    // Js Fixed menu 
+    // Js Fixed menu
     $(window).bind('scroll', function () {
-      var navHeight = $(window).height()*2 - 90;
+      var navHeight = $(window).height() * 2 - 90;
       if ($(window).scrollTop() > navHeight) {
         $('#navigation').addClass('fixed');
         $('#navigation .nav-menu').show();
@@ -190,7 +176,7 @@ $(document).ready(function () {
     });
 
     //Js for Mobile menu
-    $('.mobile-nav-button').click(function(){
+    $('.mobile-nav-button').click(function () {
       $('#navigation .nav-menu').fadeToggle('slow');
     });
 
@@ -200,8 +186,8 @@ $(document).ready(function () {
       });
     }
 
-    // Js menu hide/show on window resize.    
-    $(window).resize(function(){
+    // Js menu hide/show on window resize.
+    $(window).resize(function () {
       var navHeight = $(window).height() - 90;
       if ($(window).scrollTop() > navHeight && $(window).width() <= 1024) {
         $('.mobile-nav-button').show();
@@ -258,18 +244,18 @@ $(document).ready(function () {
     });
 
 
-    //Js for slider.    
-    
+    //Js for slider.
+
     // Activate Carousel
     $("#myCarousel").carousel({interval: 2000, pause: "false"});
     $('#catholic-church .carousel').carousel({interval: 2000, pause: "false"});
 
-    // Click on the button to start sliding 
+    // Click on the button to start sliding
     $("#myBtn").click(function () {
       $("#myCarousel").carousel("cycle");
     });
 
-    // Click on the button to stop sliding 
+    // Click on the button to stop sliding
     $("#myBtn2").click(function () {
       $("#myCarousel").carousel("pause");
       $('this').addclass('active');
@@ -293,8 +279,5 @@ $(document).ready(function () {
     }).mouseleave(function () {
       $('#slider-controls-wrapper').fadeOut('slow');
     });
-     
-    
-    
   });
 })(jQuery);
