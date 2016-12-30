@@ -21,7 +21,7 @@ $(document).ready(function () {
     streetViewControl: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     disableDefaultUI: false,
-    styles: [
+    /*styles: [
       {
         featureType: "all",
         elementType: "labels",
@@ -29,7 +29,7 @@ $(document).ready(function () {
           {visibility: "off"}
         ]
       }
-    ]
+    ]*/
   };
   var map = new google.maps.Map(document.getElementById("map"),
     myOptions);
@@ -290,6 +290,21 @@ $(document).ready(function () {
       $(this).prev().toggle('slow');
       return false;
     });
+    
+    
+    // Js for timeline slideshow caption.
+//     var CaptionshowChar = 50;
+//     var Captionellipsestext = "...";
+//    $('#timeline-content-container .content-popup-wrapper .tm-slideshow-caption').each(function () {
+//      var tmCaption = $(this).html();
+//      if (tmCaption.length > CaptionshowChar) {
+//        var Captioncuttext = tmCaption.substr(0, showChar);
+//        var html = Captioncuttext + '&nbsp' + Captionellipsestext;
+//        $(this).html(html);
+//      }
+//    });
+    
+    
 
     //Js for Image Gallery
     $('ul.first').bsPhotoGallery({

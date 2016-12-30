@@ -257,9 +257,9 @@ blockquote:after {
 
 /*--SOF Article css--*/
 
-article.section-article {
+/*article.section-article {
   text-align: center;
-}
+}*/
 
 .article-image {
   margin: 20px 0;
@@ -755,17 +755,17 @@ SOF Introduction Section Css
 }*/
 
 #introduction .row.volume-database {
-    background-color: #eaeaea;
-    border-color: #dddddd transparent;
-    border-style: dashed none;
-    border-width: 1px 0;
-    margin: 50px 0;
-    padding: 15px 0;
+  background-color: #eaeaea;
+  border-color: #dddddd transparent;
+  border-style: dashed none;
+  border-width: 1px 0;
+  margin: 50px 0;
+  padding: 15px 0;
 }
 #introduction .row.volume-database h3 {
-    color: #8d7824;
-    font-size: 22px;
-    margin: 0 0 5px;
+  color: #8d7824;
+  font-size: 22px;
+  margin: 0 0 20px;
 }
 
 #slideshow-block #slideshow-wrapper {
@@ -1103,6 +1103,24 @@ SOF Catholic Church section Css
 
 #timeline-loader.tm-loader .square div {
   background-color: #333;
+}
+
+#timeline-content-container .content-popup-wrapper .slideshow-btn.btn {
+  bottom: 55px;
+}
+
+#timeline-content-container .content-popup-wrapper .tm-slideshow-caption {
+  background-color: #3f3f3f;
+  bottom: 0;
+  color: #fff;
+  font-size: 13px;
+  height: 35px;
+  line-height: 20px;
+  opacity: 0.8;
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
 }
 
 /*=======================================
