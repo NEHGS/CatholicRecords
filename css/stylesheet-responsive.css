@@ -1,8 +1,4 @@
-@media all and (max-width:768px) {
-  /*  .mobile-nav-button {
-      display: block;
-    }*/
-
+@media all and (max-width: 1140px){
   .nav-menu {
     display: none;
     height: auto;
@@ -26,6 +22,57 @@
     color: #ffffff;
     line-height: 40px;
   }
+}
+
+
+@media all and (max-width:768px) {
+  /*  .mobile-nav-button {
+      display: block;
+    }*/
+  #seven-sacraments.sacraments-wrapper .row ul {
+    max-width: 400px;
+  }
+
+  #seven-sacraments .row ul li {
+    min-height: 178px;
+  }
+
+  #slideshow-block .slideshow-block-content {
+    width: 100%;
+  }
+
+  #slideshow-block .slider-column {
+    padding: 0;
+    width: 100%;
+  }
+
+  #catholic-church-block .map-wrapper {
+    margin: 0 0 20px;
+    width: 100%;
+  }
+
+  #catholic-church-block .tm-slider-botttom-wrapper {
+    margin: 0;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 480px){
+
+  #seven-sacraments.sacraments-wrapper .row ul {
+    max-width: 200px;
+  }
+  
+  .floated-box {
+    float: none;
+  }
+  
+  .floated-box.f-left,
+  .floated-box.f-right {
+    margin: 15px auto;
+  }
+
 }
 
 @media screen and (max-width: 380px){

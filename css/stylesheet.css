@@ -67,10 +67,6 @@ a:focus {
   text-decoration: none;
 }
 
-.btn {
-  padding: 6px 12px 8px;
-}
-
 .btn:hover {
   color: #b88c2d;
   outline: medium none;
@@ -121,7 +117,6 @@ a:focus {
 }
 
 section.container .inner {
-  border-bottom: 1px solid #b88c2d;
   height: auto;
   margin: 0 auto;
   max-width: 1170px;
@@ -132,6 +127,12 @@ section.container .inner {
 
 section#resources .inner {
   border: 0 none;
+}
+
+section.container .seperator {
+  border-bottom: 1px solid #b88c2d;
+  margin: 0 auto;
+  width: 40%;
 }
 
 .white {
@@ -224,6 +225,7 @@ blockquote:after {
 
 .floated-box button {
   margin: 15px auto 5px;
+  padding: 6px 12px;
 }
 
 /*--EOF Floated box--*/
@@ -233,6 +235,10 @@ blockquote:after {
 .button-wrapper {
   margin: 40px 0 20px;
   text-align: center;
+}
+
+.button-wrapper .btn {
+  padding: 6px 12px 9px;
 }
 
 /*.button-wrapper a {
@@ -262,13 +268,14 @@ article.section-article {
 /*--EPF Article css--*/
 
 .btn-icon {
-  vertical-align: sub;
-  font-size: 24px;
+  vertical-align: bottom;
+  font-size: 28px;
 }
 
 .btn-value {
   display: inline-block;
-  margin: 0 0 0 5px;
+  font-size: 16px;
+  margin: 0;
   vertical-align: text-bottom;
 }
 
@@ -276,8 +283,27 @@ article.section-article {
   margin: 0 5px 0 0;
 }
 
-.slideshow-wrapper .btn-value {
+.btn-value-right {
+  margin: 0 0 0 5px;
+}
+
+.content-popup-wrapper .slideshow-btn.btn {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.content-popup-wrapper .btn-value {
   display: none;
+}
+
+.modal-title {
+  font-family: 'OpenSans-Bold', sans-serif;
+}
+
+h6.note {
+  font-family: 'opensans-semibolditalic', sans-serif;
+  text-align: center;
 }
 
 /*=======================================
@@ -425,7 +451,7 @@ SOF Navigation Css
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 99;
 }
 
 #navigation.fixed {
@@ -515,7 +541,7 @@ SOF Navigation Css
   height: 100%;
   letter-spacing: 0.2px;
   line-height: 90px;
-  padding: 0 15px;
+  padding: 0 10px;
   position: relative;
   transition: all 0.5s ease 0s;
 }
@@ -595,27 +621,7 @@ EOF Home Section Css
 SOF Introduction Section Css
 =========================================*/
 
-#introduction .row.volume-database {
-  border-width: 1px 0 0;
-  border-style: solid none none;
-  border-color: #dddddd transparent transparent;
-  padding: 15px 0;
-  margin: 20px 0;
-}
-
-#introduction .row.volume-database h3 {
-  color: #8d7824;
-  font-size: 22px;
-  margin: 10px 0 5px;
-}
-
-/*=======================================
-EOF Introduction Section Css
-=========================================*/
-
-/*=======================================
-SOF 7 Sacraments section Css
-=========================================*/
+/*===SOF 7 Sacraments section Css===*/
 
 #seven-sacraments h1 .vertical-middle-title > span {
   font-family: OpenSans-SemiboldItalic, sans-serif;
@@ -652,6 +658,10 @@ SOF 7 Sacraments section Css
   width: 180px;
 }
 
+#seven-sacraments .row ul li:hover {
+  background-color: #E0DDD5;
+}
+
 #seven-sacraments .row ul li .sacrament-item {
   display: inline-block;
   margin: 0 auto;
@@ -673,86 +683,97 @@ SOF 7 Sacraments section Css
   text-transform: uppercase;
 }
 
-.sacrament-item .description {
-  background-repeat: no-repeat;
+#seven-sacraments .row ul li .modal .modal-body {
+  background-color: #e0ddd5;
   background-position: center center;
-  background-size: 70%;
-  background-color: #E0DDD5;
-  border-radius: 50%;
-  box-sizing: border-box;
-  display: none;
-  height: 100%;
-  padding: 18%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  max-height: 400px;
+  min-height: 400px;
+  overflow-y: scroll;
+  padding: 10%;
   width: 100%;
 }
 
-.sacrament-item .description-container {
+#seven-sacraments .row ul li .modal .modal-body .description-container {
   height: 100%;
   overflow: hidden;
 }
 
-.sacrament-item .description .summary {
+#seven-sacraments .row ul li .modal .modal-body .description .summary {
   color: #231f20;
   font-size: 14px;
   line-height: 18px;
   margin: 5% 0;
 }
 
-.sacrament-list-item:hover .description {
-  display: block;
-}
 
-#seven-sacraments .row ul li.item1 .sacrament-item .description {
+#seven-sacraments .row ul li.item1 .modal .modal-body {
   background-image: url(../images/seven-sacraments/sacrament1-white.png);
 }
 
-#seven-sacraments .row ul li.item2 .sacrament-item .description {
+#seven-sacraments .row ul li.item2 .modal .modal-body {
   background-image: url(../images/seven-sacraments/sacrament2-white.png);
 }
 
-#seven-sacraments .row ul li.item3 .sacrament-item .description {
+#seven-sacraments .row ul li.item3 .modal .modal-body {
   background-image: url(../images/seven-sacraments/sacrament3-white.png);
 }
 
-#seven-sacraments .row ul li.item4 .sacrament-item .description {
+#seven-sacraments .row ul li.item4 .modal .modal-body {
   background-image: url(../images/seven-sacraments/sacrament4-white.png);
 }
 
-#seven-sacraments .row ul li.item5 .sacrament-item .description {
+#seven-sacraments .row ul li.item5 .modal .modal-body {
   background-image: url(../images/seven-sacraments/sacrament5-white.png);
 }
 
-#seven-sacraments .row ul li.item6 .sacrament-item .description {
+#seven-sacraments .row ul li.item6 .modal .modal-body {
   background-image: url(../images/seven-sacraments/sacrament6-white.png);
 }
 
-#seven-sacraments .row ul li.item7 .sacrament-item .description {
+#seven-sacraments .row ul li.item7 .modal .modal-body {
   background-image: url(../images/seven-sacraments/sacrament7-white.png);
 }
 
-/*=======================================
-EOF 7 Sacraments section Css
-=========================================*/
+/*===EOF 7 Sacraments section Css===*/
 
-/*=======================================
-SOF Slideshow css
-=========================================*/
+/*===SOF Slideshow css===*/
+
+/*#introduction .row.volume-database {
+  border-width: 1px 0 0;
+  border-style: solid none none;
+  border-color: #dddddd transparent transparent;
+  padding: 15px 0;
+  margin: 20px 0;
+}
+
+#introduction .row.volume-database h3 {
+  color: #8d7824;
+  font-size: 22px;
+  margin: 10px 0 5px;
+}*/
+
+#introduction .row.volume-database {
+    background-color: #eaeaea;
+    border-color: #dddddd transparent;
+    border-style: dashed none;
+    border-width: 1px 0;
+    margin: 50px 0;
+    padding: 15px 0;
+}
+#introduction .row.volume-database h3 {
+    color: #8d7824;
+    font-size: 22px;
+    margin: 0 0 5px;
+}
 
 #slideshow-block #slideshow-wrapper {
   position: relative;
 }
 
-#slideshow-block .slideshow-btn.btn {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-}
-
 #slideshow-block .slider-column {
-  padding: 0;
+  padding: 0 15px 0 0;
   width: 40%;
 }
 
@@ -827,13 +848,9 @@ SOF Slideshow css
   margin: 0;
 }
 
-/*=======================================
-EOF Slider css
-=========================================*/
+/*===EOF Slideshow css===*/
 
-/*=======================================
-SOF Image Gallery
-=========================================*/
+/*===SOF Image Gallery===*/
 
 #image-gallery #bsPhotoGalleryModal {
   z-index: 9999;
@@ -876,7 +893,7 @@ SOF Image Gallery
 }
 #image-gallery .imgWrapper {
   overflow: hidden;
-  max-height: 360px;
+  max-height: 235px;
 }
 
 #image-gallery a.bsp-controls,
@@ -906,7 +923,7 @@ SOF Image Gallery
 #image-gallery #bsPhotoGalleryModal h6{
   margin-bottom: 0;
   font-weight: bold;
-  color: #000;
+  color: #ffffff;
   font-size: 14px;
   padding-left: 12px;
   padding-right: 12px;
@@ -939,17 +956,36 @@ SOF Image Gallery
   z-index: 0;
 }*/
 
+/*===EOF Image Gallery===*/
+
 /*=======================================
-EOF Image Gallery
+EOF Introduction Section Css
 =========================================*/
 
 /*=======================================
 SOF Catholic Church section Css
 =========================================*/
 
+#catholic-church .row {
+  margin: 20px 0 30px;
+}
+
+#catholic-church-block .map-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 60%;
+}
+
+#catholic-church-block .tm-slider-botttom-wrapper {
+  margin: 0 0 0 2%;
+  padding: 0;
+  width: 38%;
+}
+
 #map {
   border: 1px solid #d3d3d3;
-  /*  max-height: 400px;*/
+  min-height: 292px;
+  max-height: 292px;
   overflow: hidden;
   box-shadow: 0 0 3px #ccc;
 }
@@ -989,6 +1025,7 @@ SOF Catholic Church section Css
   float: left;
   padding: 5px;
   width: 78%;
+  line-height:20px;
 }
 
 .right-box .field {
@@ -1031,15 +1068,19 @@ SOF Catholic Church section Css
   color: #a51e2d;
 }
 
-.tm-slider-botttom-wrapper .row {
+.tm-slider-botttom-wrapper .tm-content-row {
   visibility: hidden;
   opacity: 0;
   position: absolute;
 }
 
-.tm-slider-botttom-wrapper .row.active {
+.tm-slider-botttom-wrapper .tm-content-row.active {
   visibility: visible;
   position: relative;
+}
+
+.tm-slider-botttom-wrapper .tm-content-row .modal .modal-body .col:first-child {
+  margin: 0 0 15px;
 }
 
 .cath-church-elments-wrapper .map-wrapper {
@@ -1114,9 +1155,23 @@ EOF Footer css
   width: 98%;
 }
 
-#BC .slider-selection {
-  background: #49686A;
-}
-#BC .slider-handle {
+.slider.slider-horizontal .slider-handle {
+  background-color: #bd922d;
   border-bottom-color: #BD922D;
+  background-image: none;
+}
+
+.slider.slider-horizontal .slider-tick, 
+.slider.slider-horizontal .slider-handle {
+  background-color: #bd922d;
+  background-image: none;
+}
+
+.slider.slider-horizontal .slider-track {
+  background-color: #EACE8C;
+  background-image: none;
+}
+
+.slider.slider-horizontal .slider-selection {
+  background: #614622;
 }

@@ -14,48 +14,123 @@
 
 // Show map locations.
 $(document).ready(function () {
-  var b = $('#B').slider({tooltip: 'always'});
-  b.data('slider');
+  // Initialize map and its options.
+  var myOptions = {
+    center: new google.maps.LatLng(42.324458, -72.001991),
+    zoom: 8,
+    streetViewControl: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    disableDefaultUI: false,
+    styles: [
+      {
+        featureType: "all",
+        elementType: "labels",
+        stylers: [
+          {visibility: "off"}
+        ]
+      }
+    ]
+  };
+  var map = new google.maps.Map(document.getElementById("map"),
+    myOptions);
 
-  $(".tm-slider-botttom-wrapper .row:first-child").css('opacity','1');
+  var markers = [];
+  // Adds a marker to the map and push to the array.
+  function addMarker(location, title, map) {
+    var pinColor = "BD922D";
+    var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor,
+        new google.maps.Size(21, 34),
+        new google.maps.Point(0,0),
+        new google.maps.Point(10, 34));
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map,
+      title: title,
+      icon: pinImage,
+    });
+    markers.push(marker);
+    return marker;
+  }
+
+  // Sets the map on all markers in the array.
+  function setMapOnAll(map) {
+    for (var i = 0; i < markers.length; i++) {
+      markers[i].setMap(map);
+    }
+  }
+
+  // Removes the markers from the map, but keeps them in the array.
+  function clearMarkers() {
+    setMapOnAll(null);
+  }
+
+  // Shows any markers currently in the array.
+  function showMarkers(map) {
+    setMapOnAll(map);
+  }
+
+  // Deletes all markers in the array by removing references to them.
+  function deleteMarkers(map) {
+    clearMarkers(map);
+    markers = [];
+  }
+  // Global Infowindow shown on the map.
+  var infowindow = new google.maps.InfoWindow();
+
+  function setMarkers(map, locations, from, to) {
+    //console.log(markers);
+    var marker, i;
+    deleteMarkers(map);
+    for (i = 0; i < locations.length; i++)
+    {
+      var obj = locations[i];
+      if (obj.year <= to)
+      {
+        var title = obj.name;
+        var lat = obj.lat;
+        var long = obj.lng;
+        var content = obj.description;
+
+        latlngset = new google.maps.LatLng(lat, long);
+
+        var marker = addMarker(latlngset, title, map);
+
+        google.maps.event.addListener(marker, 'click', (function (marker, content, infowindow) {
+          return function () {
+            infowindow.close();
+            infowindow.setContent(content);
+            infowindow.open(map, marker);
+          };
+        })(marker, content, infowindow));
+      }
+    }
+    showMarkers(map);
+  }
+
+  // Timeline Slider initialization.
+  $("#B").slider({
+    id: 'BC',
+    tooltip: 'hide',
+    ticks: [1780, 1790, 1800, 1810, 1820, 1830, 1840, 1850, 1860, 1870, 1880, 1890, 1900],
+    ticks_labels: ['1780', '1790', '1800', '1810', '1820', '1830', '1840', '1850', '1860', '1870', '1880', '1890', '1900'],
+    handle: 'round',
+  });
+
+  $(".tm-slider-botttom-wrapper .tm-content-row:first-child").css('opacity', '1');
 
   $("#B").on("slideStop", function (slideEvt) {
     changeCarousel(slideEvt.value);
     prepareLocations(1780, slideEvt.value, 'refresh');
   });
 
-  /*$("#B").on("change", function(slideEvt) {
-   changeCarousel(slideEvt.value.newValue);
-   prepareLocations(1780, slideEvt.value.newValue, 'refresh');
-   });*/
 
-  var prepareLocations = function (from, to, mode) {
-    // console.log(from+'--'+to);
-    var locationArr = {};
+  var prepareLocations = function (from, to) {
     $.getJSON('json/mapdata.json', function (data) {
-      $.each(data, function (i, f) {
-        if (f.year <= to)
-        {
-          var obj = {};
-          obj.lat = f.lat;
-          obj.lng = f.lng;
-          obj.name = f.name;
-          obj.description = f.description;
-          locationArr[i] = obj;
-        }
-      });
-      //console.log(locationArr);
-      simplemaps_custommap_mapdata.locations = locationArr;
-      if (mode !== 'onload')
-      {
-        simplemaps_custommap.refresh();
-      } else {
-        simplemaps_custommap.load();
-      }
+      setMarkers(map, data, from, to);
     });
   }
 
-  prepareLocations(1780, 1780, 'onload');
+  prepareLocations(1780, 1780);
 
 
   var changeCarousel = function (value) {
@@ -87,11 +162,11 @@ $(document).ready(function () {
       timelineId = 'parish_1890_1900';
     }
 
-    $(".tm-slider-botttom-wrapper .row").removeClass('active');
+    $(".tm-slider-botttom-wrapper .tm-content-row").removeClass('active');
     //$(".tm-slider-botttom-wrapper .row").fadeOut();
-    $("#timeline-loader").show().delay(1500).fadeOut();
+    $("#timeline-loader").show().delay(500).fadeOut();
 
-    var fix = ('.tm-slider-botttom-wrapper .row') + '#' + timelineId;
+    var fix = ('.tm-slider-botttom-wrapper .tm-content-row') + '#' + timelineId;
 
     $(fix).addClass('active').animate({opacity: 1.0}, 1500);
 
@@ -101,14 +176,8 @@ $(document).ready(function () {
 
 (function ($) {
   $(document).ready(function () {
-    // To show the intro banner on first visit.
-    var visited = localStorage.getItem('visited');
-    if (!visited) {
-      localStorage.setItem('visited', true);
-    }
-
     //Js for loader
-    $("#siteloader").show().delay(1500).fadeOut();
+    $("#siteloader").show().delay(1000).fadeOut();
 
 
     var windowWidth = $(window).width();
@@ -127,18 +196,16 @@ $(document).ready(function () {
     });
 
     // Button mouse over.
-    $(".slideshow-wrapper button.site-button").mouseover(function () {
-      $('.slideshow-wrapper button.site-button .btn-value').show();
+    $(".content-popup-wrapper button.site-button").mouseover(function () {
+      $('.content-popup-wrapper button.site-button .btn-value').show();
     }).mouseout(function () {
-      $('.slideshow-wrapper button.site-button .btn-value').hide();
+      $('.content-popup-wrapper button.site-button .btn-value').hide();
     });
 
 
     //Nav section scroll
     $('#navigation .nav-menu ul li a').click(function (e) {
-      if (!visited) {
-        e.preventDefault();
-      }
+      e.preventDefault();
       $('#navigation .nav-menu ul li a.active').removeClass('active');
       $(this).addClass('active');
       var getID = '#' + $(this).attr('name');
@@ -164,12 +231,12 @@ $(document).ready(function () {
       } else {
         $('#navigation').removeClass('fixed');
         $('#navigation .nav-menu').hide();
-
       }
 
-      if ($(window).scrollTop() > navHeight && $(window).width() <= 1024) {
-        $('.mobile-nav-button').show();
+      //Js for Mobile menu show/hide
+      if ($(window).scrollTop() > navHeight && $(window).width() <= 1140) {
         $('#navigation .nav-menu').hide();
+        $('.mobile-nav-button').show();
       } else {
         $('.mobile-nav-button').hide();
       }
@@ -180,24 +247,12 @@ $(document).ready(function () {
       $('#navigation .nav-menu').fadeToggle('slow');
     });
 
-    if ($(window).width() <= 1024) {
+    //Js for hide nav after clicking on link when mobile menu enable
+    if ($(window).width() <= 1140) {
       $('.nav-menu ul li a').click(function () {
         $('#navigation .nav-menu').fadeOut('slow');
       });
     }
-
-    // Js menu hide/show on window resize.
-    $(window).resize(function () {
-      var navHeight = $(window).height() - 90;
-      if ($(window).scrollTop() > navHeight && $(window).width() <= 1024) {
-        $('.mobile-nav-button').show();
-        $('#navigation .nav-menu').hide();
-      } else {
-        $('.mobile-nav-button').hide();
-        $('#navigation .nav-menu').show();
-      }
-    });
-
 
     //Toggle article display
     $('article.section-article').hide();
@@ -245,7 +300,6 @@ $(document).ready(function () {
 
 
     //Js for slider.
-
     // Activate Carousel
     $("#myCarousel").carousel({interval: 2000, pause: "false"});
     $('#catholic-church .carousel').carousel({interval: 2000, pause: "false"});
@@ -280,4 +334,22 @@ $(document).ready(function () {
       $('#slider-controls-wrapper').fadeOut('slow');
     });
   });
+  
+    
+    
+    // Js menu hide/show on window resize.
+    $(window).on("resize", function () {
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+    $('#fullscreen, #fullscreen .bg-image').css({'width': windowWidth, 'height': windowHeight, 'background-position': 'center center'});
+    var navHeight = $(window).height() - 90;
+    if ($(window).scrollTop() > navHeight && $(window).width() <= 1140) {
+      $('.mobile-nav-button').show();
+      $('#navigation .nav-menu').hide();
+    } else {
+      $('.mobile-nav-button').hide();
+    }
+  }).resize();
+    
+    
 })(jQuery);
