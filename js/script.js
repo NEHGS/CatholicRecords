@@ -176,6 +176,7 @@ $(document).ready(function () {
 
 (function ($) {
   $(document).ready(function () {
+  
     //Js for loader
     $("#siteloader").show().delay(1000).fadeOut();
 
@@ -348,6 +349,7 @@ $(document).ready(function () {
     }).mouseleave(function () {
       $('#slider-controls-wrapper').fadeOut('slow');
     });
+    
   });
   
     

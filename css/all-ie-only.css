@@ -1,0 +1,19 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .square div {
+    animation: sk-threeBounceDelay 1.4s ease-in-out 0s;
+    display: inline-block;
+  }
+
+  .container {
+    z-index: 11;
+  }
+
+  .modal {
+    background: rgba(0, 0, 0, 0.8); /* The color depends on your template */
+    top: 80px;
+  }
+
+  .modal-backdrop {
+    display: none;
+  }
+}

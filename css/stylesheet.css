@@ -1,13 +1,13 @@
 /*=====Import fonts======*/
 
-@import "../fonts/fonts.css";
+/*@import "../fonts/fonts.css";*/
 
 /*=======================================
 SOF Common Css
 =========================================*/
 
 html, body {
-  font-family: "OpenSans-Semibold", sans-serif;
+  font-family: 'open_sanssemibold', sans-serif;
   font-size: 16px;
   line-height: 1.8em;
   height: 100%;
@@ -25,7 +25,7 @@ section, .cover {
 }
 
 .h1, .h2, .h3, h1, h2, h3 {
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: 'open_sansbold', sans-serif;
 }
 
 p {
@@ -50,7 +50,7 @@ button {
   border-radius: 4px;
   color: #ffffff;
   display: block;
-  font-family: OpenSans-Semibold;
+  font-family: 'open_sanssemibold', sans-serif;
   font-size: 12px;
   padding: 4px 5px;
   text-transform: uppercase;
@@ -100,11 +100,11 @@ a:focus {
 }
 
 .text-italic {
-  font-family: 'OpenSans-Italic', sans-serif;
+  font-family: 'open_sansitalic', sans-serif;
 }
 
 .text-bold {
-  font-family: 'OpenSans-ExtraBold', sans-serif;
+  font-family: 'open_sansextrabold', sans-serif;
 }
 
 .container {
@@ -164,7 +164,7 @@ ul {
 
 blockquote {
   border: 0 none;
-  font-family: 'OpenSans-BoldItalic', sans-serif;
+  font-family: 'open_sansbold_italic', sans-serif;
 }
 
 blockquote:before {
@@ -224,6 +224,7 @@ blockquote:after {
 }
 
 .floated-box button {
+  display: block;
   margin: 15px auto 5px;
   padding: 6px 12px;
 }
@@ -241,18 +242,6 @@ blockquote:after {
   padding: 6px 12px 9px;
 }
 
-/*.button-wrapper a {
-  background-color: #2b2b2b;
-  color: #ffffff;
-  display: inline-block;
-  font-family: 'OpenSans-Semibold', sans-serif;
-  padding: 5px 10px;
-  text-transform: uppercase;
-}
-
-.button-wrapper a:hover {
-  background-color: #3f3f3f;
-}*/
 /*-- EOF Grey button wrapper css--*/
 
 /*--SOF Article css--*/
@@ -298,7 +287,7 @@ blockquote:after {
 }
 
 .modal-title {
-  font-family: 'OpenSans-Bold', sans-serif;
+  font-family: 'open_sansbold', sans-serif;
 }
 
 h6.note {
@@ -451,7 +440,7 @@ SOF Navigation Css
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 13;
 }
 
 #navigation.fixed {
@@ -559,6 +548,23 @@ EOF Navigation Css
 SOF Home Section Css
 =========================================*/
 
+.banner--image-start {
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:12;
+}
+.banner--image-end {
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:10;
+}
+
 .banner-screen-wrapper {
   position: fixed;
   left: 0;
@@ -624,7 +630,7 @@ SOF Introduction Section Css
 /*===SOF 7 Sacraments section Css===*/
 
 #seven-sacraments h1 .vertical-middle-title > span {
-  font-family: OpenSans-SemiboldItalic, sans-serif;
+  font-family: 'open_sanssemibold_italic', sans-serif;
   font-size: 66px;
   vertical-align: sub;
 }
@@ -676,7 +682,7 @@ SOF Introduction Section Css
 
 #seven-sacraments .row ul li .sacrament-item .sacrmt-icon-title {
   color: #000000;
-  font-family: OpenSans-Semibold;
+  font-family: 'open_sanssemibold', sans-serif;
   font-size: 14px;
   line-height: 18px;
   margin: 10px 0;
@@ -801,7 +807,7 @@ SOF Introduction Section Css
 
 #slideshow-block .carousel-caption h4 {
   color: #ffffff;
-  font-family: OpenSans-Bold, sans-serif;
+  font-family: 'open_sansbold', sans-serif;
   margin: 5px 0;
   text-align: left;
 }
@@ -952,10 +958,6 @@ SOF Introduction Section Css
   padding: 10px;
 }
 
-/*.modal-backdrop {
-  z-index: 0;
-}*/
-
 /*===EOF Image Gallery===*/
 
 /*=======================================
@@ -999,7 +1001,7 @@ SOF Catholic Church section Css
 #popup-box {
   background-color: #ffffff;
   bottom: 0;
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: 'open_sansregular', sans-serif;
   overflow: hidden;
   position: inherit;
   z-index: 9999;
@@ -1008,7 +1010,7 @@ SOF Catholic Church section Css
 
 #popup-box h4 {
   color: #000000;
-  font-family: OpenSans-bold,sans-serif;
+  font-family: 'OpenSans-bold', sans-serif;
   font-size: 12px;
   margin: 0 0 10px;
   text-transform: uppercase;
@@ -1059,7 +1061,7 @@ SOF Catholic Church section Css
 
 .timeline-wrapper .year-link > a {
   display: block;
-  font-family: OpenSans-Semibold,sans-serif;
+  font-family: 'open_sanssemibold', sans-serif;
   padding: 5px;
   text-align: center;
 }
