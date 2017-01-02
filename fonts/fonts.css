@@ -1,9 +1,3 @@
-/*@font-face {
-  font-family: Open Sans;
-  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
-  font-weight: 400;
-}*/
-
 /*-------Open Sans-------*/
 
 @font-face {
@@ -57,18 +51,3 @@
 }
 
 /*-------Open Sans Condensed-------*/
-
-@font-face {
-    font-family: 'OpenSans-CondBold';
-    src: url('Open_Sans_Condensed/OpenSans-CondBold.ttf');
-}
-
-@font-face {
-    font-family: 'OpenSans-CondLight';
-    src: url('Open_Sans_Condensed/OpenSans-CondLight.ttf');
-}
-
-@font-face {
-    font-family: 'OpenSans-CondLightItalic';
-    src: url('Open_Sans_Condensed/OpenSans-CondLightItalic.ttf');
-}
