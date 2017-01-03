@@ -1195,3 +1195,19 @@ EOF Footer css
 .slider.slider-horizontal .slider-selection {
   background: #614622;
 }
+bounce {
+    position: absolute;
+    margin: auto;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 100px;
+    line-height: 40px;
+    -webkit-animation: bounce 2s infinite ease-in-out;
+}
+@-webkit-keyframes bounce {
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-20px); }
+	80% { -webkit-transform: translateY(-10px); }
+}
