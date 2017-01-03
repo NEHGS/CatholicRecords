@@ -1201,8 +1201,8 @@ EOF Footer css
 @import "compass/css3";
 
 .arrow {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  top: 80%;
   left: 50%;
   margin-left:-20px;
   width: 40px;
