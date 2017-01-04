@@ -16,4 +16,8 @@
   .modal-backdrop {
     display: none;
   }
+  
+  ul.resoures-list {
+    list-style: disc inside;
+  }
 }

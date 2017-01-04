@@ -199,11 +199,11 @@ blockquote:after {
 }
 
 .floated-box.f-left {
-  margin: 10px 20px 10px 0px;
+  margin: 10px 30px 10px 0px;
 }
 
 .floated-box.f-right {
-  margin: 10px 0px 10px 20px;
+  margin: 10px 0px 10px 30px;
 }
 
 .floated-box p {
@@ -1005,7 +1005,7 @@ SOF Catholic Church section Css
   overflow: hidden;
   position: inherit;
   z-index: 9999;
-  width: 320px;
+  width: 100%;
 }
 
 #popup-box h4 {

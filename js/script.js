@@ -184,7 +184,7 @@ $(document).ready(function () {
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
 
-    $('#fullscreen, #fullscreen .bg-image').css({width: windowWidth, height: windowHeight});
+    $('#fullscreen, #fullscreen .bg-image, #siteloader').css({width: windowWidth, height: windowHeight});
 
     // 7 sacrament icon hover show description scroller.
     $('body').on('mouseenter', '#seven-sacraments .row ul li', function () {
@@ -203,6 +203,9 @@ $(document).ready(function () {
       $('.content-popup-wrapper button.site-button .btn-value').hide();
     });
 
+    //Js for apply window width to navigation wrapper.
+      $('#navigation').width(windowWidth);
+    
 
     //Nav section scroll
     $('#navigation .nav-menu ul li a').click(function (e) {
@@ -213,7 +216,7 @@ $(document).ready(function () {
       $(getID).addClass('active');
       if (windowWidth <= 480) {
         $('html, body').animate({
-          scrollTop: $(getID).offset().top - 100
+          scrollTop: $(getID).offset().top - 80
         }, 1000);
       } else {
         $('html, body').animate({
@@ -231,7 +234,7 @@ $(document).ready(function () {
       $(getID).addClass('active');
       if (windowWidth <= 480) {
         $('html, body').animate({
-          scrollTop: $(getID).offset().top - 100
+          scrollTop: $(getID).offset().top - 80
         }, 1000);
       } else {
         $('html, body').animate({
@@ -255,7 +258,8 @@ $(document).ready(function () {
       //Js for Mobile menu show/hide
       if ($(window).scrollTop() > navHeight && $(window).width() <= 1140) {
         $('#navigation .nav-menu').hide();
-        $('.mobile-nav-button').show();
+        //$('.mobile-nav-button').show();
+        $('.mobile-nav-button').css('display', 'inline-block');
       } else {
         $('.mobile-nav-button').hide();
       }
@@ -376,14 +380,20 @@ $(document).ready(function () {
     $(window).on("resize", function () {
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
+    $('#siteloader').css({width: windowWidth, height: windowHeight});
     $('#fullscreen, #fullscreen .bg-image').css({'width': windowWidth, 'height': windowHeight, 'background-position': 'center center'});
     var navHeight = $(window).height() - 90;
     if ($(window).scrollTop() > navHeight && $(window).width() <= 1140) {
-      $('.mobile-nav-button').show();
+      //$('.mobile-nav-button').show();
+      $('.mobile-nav-button').css('display', 'inline-block');
       $('#navigation .nav-menu').hide();
     } else {
       $('.mobile-nav-button').hide();
     }
+    
+    //Js for apply window width to navigation wrapper.
+    $('#navigation').width(windowWidth);
+
   }).resize();
     
     

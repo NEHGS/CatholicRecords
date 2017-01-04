@@ -24,18 +24,20 @@
   }
 }
 
+@media all and (max-width:820px) {
 
-@media all and (max-width:768px) {
-  /*  .mobile-nav-button {
-      display: block;
-    }*/
   #seven-sacraments.sacraments-wrapper .row ul {
     max-width: 400px;
   }
-
+  
   #seven-sacraments .row ul li {
     min-height: 178px;
   }
+  
+}
+
+
+@media all and (max-width:768px) {
 
   #slideshow-block .slideshow-block-content {
     width: 100%;
@@ -50,6 +52,10 @@
     margin: 0 0 20px;
     width: 100%;
   }
+  
+  .tm-slider-botttom-wrapper .tm-content-row {
+    height: auto;
+  }
 
   #catholic-church-block .tm-slider-botttom-wrapper {
     margin: 0;
@@ -59,6 +65,33 @@
 }
 
 @media screen and (max-width: 480px){
+  
+  .home-inner {
+    top: 35%;
+  }
+  
+  #navigation,
+  #navigation .navigation {
+    height: auto;
+  }
+  
+  .navigation .logo {
+    margin: 10px 0;
+    text-align: center;
+    transform: none;
+    width: 100%;
+  }
+  
+  .navigation .logo img {
+    max-height: none;
+    width: 100%;
+  }
+  
+  .mobile-nav-button {
+    right: 0;
+    position: relative;
+    width: 100%;
+  }
 
   #seven-sacraments.sacraments-wrapper .row ul {
     max-width: 200px;
@@ -72,6 +105,41 @@
   .floated-box.f-right {
     margin: 15px auto;
   }
+  
+  .btn {
+    white-space: normal;
+  }
+  
+  .glyphicon {
+    margin: 10px 0 10px;
+  }
+  
+  .timeline-wrapper {
+    min-height: 90px;
+  }
+  
+  .slider.slider-horizontal .slider-tick-label-container .slider-tick-label {
+    display: none;
+  }
+  
+  .slider.slider-horizontal .slider-tick-label-container {
+    overflow: hidden;
+  }
+  
+  .slider.slider-horizontal .slider-tick-label-container .slider-tick-label:first-child {
+    display: inline-block;
+    float: left;
+  }
+  
+  .slider.slider-horizontal .slider-tick-label-container .slider-tick-label:last-child {
+    display: inline-block;
+    float: right;
+  }
+  
+  .slider.slider-horizontal .slider-tick {
+    background-color: transparent;
+    box-shadow: none;
+  }  
 
 }
 
