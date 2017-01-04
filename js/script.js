@@ -221,6 +221,24 @@ $(document).ready(function () {
         }, 1000);
       }
     });
+    
+    
+    //Js for Scroll down arrow.
+    $('a.scroll-down-arrow').click(function (e) {
+      e.preventDefault();
+      var getID = '#' + $(this).attr('name');
+      $('#navigation .nav-menu ul li:first-child a').addClass('active');
+      $(getID).addClass('active');
+      if (windowWidth <= 480) {
+        $('html, body').animate({
+          scrollTop: $(getID).offset().top - 100
+        }, 1000);
+      } else {
+        $('html, body').animate({
+          scrollTop: $(getID).offset().top - 88
+        }, 1000);
+      }
+    });
 
 
     // Js Fixed menu

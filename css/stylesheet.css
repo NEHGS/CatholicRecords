@@ -1071,8 +1071,10 @@ SOF Catholic Church section Css
 }
 
 .tm-slider-botttom-wrapper .tm-content-row {
+  height: 292px;
   visibility: hidden;
   opacity: 0;
+  overflow: hidden;
   position: absolute;
 }
 
