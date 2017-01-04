@@ -606,16 +606,16 @@ SOF Home Section Css
   z-index: 12;
 }
 .home-text-slider h1 {
-  font-size: 70px;
+  font-size: 80px;
 }
 .home-text-slider h1.small-type {
-  font-size: 55px;
+  font-size: 65px;
 }
 .home-text-slider .home-fixed-text {
-  font-size: 15px;
+  font-size: 20px;
 }
 .bw-type .home-text-slider .home-fixed-text {
-  font-size: 15px;
+  font-size: 20px;
   margin: 20px auto;
 }
 
