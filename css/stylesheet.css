@@ -216,7 +216,6 @@ blockquote:after {
   line-height: 18px;
   margin: 10px 0;
   padding: 5px 10px;
-  text-align: center;
 }
 
 .morecontent span {
@@ -603,18 +602,13 @@ SOF Home Section Css
   width: calc(100% - 70px);
   z-index: 12;
 }
-.home-text-slider h1 {
-  font-size: 80px;
+
+#home .home-text-block h1.white {
+  font-size: 72px;
 }
-.home-text-slider h1.small-type {
-  font-size: 65px;
-}
-.home-text-slider .home-fixed-text {
-  font-size: 20px;
-}
-.bw-type .home-text-slider .home-fixed-text {
-  font-size: 20px;
-  margin: 20px auto;
+
+#home .home-text-block p.home-fixed-text.white {
+  font-size: 26px;
 }
 
 /*=======================================
