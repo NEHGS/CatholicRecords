@@ -363,6 +363,11 @@ $(document).ready(function () {
       $('#catholic-church .carousel').carousel("next");
     });
 
+    // Reset carousel on modal show
+    $("#myModal").on('show.bs.modal', function(e) {
+      $("#myCarousel").carousel(0);
+    });
+
     //Js for hide/show slider controls.
     $('#slider-controls-wrapper').hide();
 
