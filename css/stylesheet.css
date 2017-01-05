@@ -295,6 +295,10 @@ h6.note {
   text-align: center;
 }
 
+.carousel .carousel-control {
+  background-image: none;
+}
+
 /*=======================================
 EOF Common Css
 =========================================*/

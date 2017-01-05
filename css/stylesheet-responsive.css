@@ -122,10 +122,6 @@
     display: none;
   }
   
-  .slider.slider-horizontal .slider-tick-label-container {
-    overflow: hidden;
-  }
-  
   .slider.slider-horizontal .slider-tick-label-container .slider-tick-label:first-child {
     display: inline-block;
     float: left;
