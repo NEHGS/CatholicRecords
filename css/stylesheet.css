@@ -803,6 +803,8 @@ SOF Introduction Section Css
   background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
   bottom: 0;
   left: 0;
+  min-height: 82px;
+  max-height: 82px;
   padding: 10px;
   position: relative;
   right: 0;
@@ -856,6 +858,12 @@ SOF Introduction Section Css
 #slider-controls-wrapper .right-controls a span.glyphicon {
   font-size: 20px;
   margin: 0;
+}
+
+#slideshow-block .carousel .item > img {
+  height: 450px;
+  max-height: 450px;
+  width: auto;
 }
 
 /*===EOF Slideshow css===*/
