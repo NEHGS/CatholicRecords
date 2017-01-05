@@ -73,6 +73,10 @@
     margin: 0;
     width: 100%;
   }
+  
+  #popup-box h4 {
+    margin: 0 0 5px -35px;
+  }
 
 }
 
@@ -163,6 +167,10 @@
     height: 350px;
     max-height: 350px;
     width: auto;
+  }
+  
+  #popup-box h4 {
+    margin:0 0 5px -10px;
   }
 
 }

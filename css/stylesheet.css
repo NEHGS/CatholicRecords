@@ -1010,16 +1010,16 @@ SOF Catholic Church section Css
 
 #popup-box h4 {
   color: #000000;
-  font-family: 'OpenSans-bold', sans-serif;
-  font-size: 12px;
-  margin: 0 0 10px;
+  font-family: 'open_sansbold', sans-serif;
+  font-size: 16px;
+  margin: 0 0 5px -40px;
   text-transform: uppercase;
 }
 
 .left-box {
   float: left;
   margin: 0 2% 0 0;
-  padding: 5px;
+  padding: 12px 5px 5px;
   width: 20%;
 }
 
@@ -1036,15 +1036,33 @@ SOF Catholic Church section Css
 }
 
 .right-box .field span {
-  color: #000000;
+  color: #595959;
+  font-family: 'open_sanssemibold', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
   display: inline;
 }
 
 .right-box .field span.label {
-  color: #000000;
-  font-weight: 400;
-  font-size: 12px;
   padding: 0;
+}
+
+#popup-box .browse-record-wrapper {
+  margin: 15px 0 0;
+  text-align: center;
+}
+
+#popup-box .browse-record-wrapper > h5 {
+  font-family: "Open_sansbold",sans-serif;
+  margin: 10px 0 5px;
+}
+
+#popup-box .browse-record-wrapper a {
+  color: #b88c2d;
+}
+
+#popup-box .browse-record-wrapper a:hover {
+  color: #337ab7;
 }
 
 /*--End Map Popup css--*/
