@@ -339,8 +339,8 @@ $(document).ready(function () {
 
     //Js for slider.
     // Activate Carousel
-    $("#myCarousel").carousel({interval: 2000, pause: "false"});
-    $('#catholic-church .carousel').carousel({interval: 2000, pause: "false"});
+    $("#myCarousel").carousel({interval: 4000, pause: "false"});
+    $('#catholic-church .carousel').carousel({interval: 4000, pause: "false"});
 
     // Click on the button to start sliding
     $("#myBtn").click(function () {
