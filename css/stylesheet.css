@@ -1261,3 +1261,20 @@ url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz
 	40% {transform: translateY(-30px);}
 	60% {transform: translateY(-15px);}
 }
+
+/* AHD related resources */
+
+.rel-image {
+  overflow: hidden;
+  max-height: 235px;
+  width: 100%;
+}
+
+.rel-caption {
+  background: #3F3F3F;
+  color: white;
+  font-size: 11px;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+}
