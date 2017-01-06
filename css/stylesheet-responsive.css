@@ -83,17 +83,17 @@
 @media screen and (max-width: 480px){
   
   #home .home-text-block h1.white {
-    font-size: 56px;
+    font-size: 48px;
     text-align: center;
   }
 
   #home .home-text-block p.home-fixed-text.white {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
   }
   
   .home-inner {
-    top: 35%;
+    top: 25%;
   }
   
   #navigation,
