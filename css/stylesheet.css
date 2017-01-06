@@ -1261,11 +1261,3 @@ url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz
 	40% {transform: translateY(-30px);}
 	60% {transform: translateY(-15px);}
 }
-
-/*AHD added rules */
-
-@media (max-width: 768px) {
-  .rotate {
-    text-align: center;
-  }
-}

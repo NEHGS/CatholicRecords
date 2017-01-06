@@ -173,6 +173,10 @@
     margin:0 0 5px -10px;
   }
 
+  .rotate {
+    text-align: center;
+  }
+
 }
 
 @media screen and (max-width: 380px){
