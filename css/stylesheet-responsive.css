@@ -168,6 +168,10 @@
     max-height: 350px;
     width: auto;
   }
+
+  #slideshow-block .carousel-indicators {
+    top: 320px;
+  }
   
   #popup-box h4 {
     margin:0 0 5px -10px;

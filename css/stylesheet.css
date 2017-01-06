@@ -784,7 +784,7 @@ SOF Introduction Section Css
 }
 
 #slideshow-block .carousel-indicators {
-  bottom: 16%;
+  top: 420px;
 }
 
 #slideshow-block .carousel-caption {
@@ -792,7 +792,7 @@ SOF Introduction Section Css
   bottom: 0;
   left: 0;
   min-height: 82px;
-  max-height: 82px;
+  /*max-height: 82px;*/
   padding: 10px;
   position: relative;
   right: 0;
