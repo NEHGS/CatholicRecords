@@ -1291,3 +1291,12 @@ url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz
   padding: 10px;
   text-align: center;
 }
+
+
+
+#introduction-section-floated-bx-modal1 .modal-body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../images/project-saint-icon.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 85% auto;
+}
