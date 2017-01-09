@@ -112,7 +112,7 @@ a:focus {
   position: relative;
   height: auto;
   margin: 0;
-  width: 100%;
+  width: auto;
   z-index: auto;
 }
 
