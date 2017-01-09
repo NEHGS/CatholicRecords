@@ -396,7 +396,7 @@ $(document).ready(function () {
     if (windowWidth <= 480) {
       $('#fullscreen .image-container .bg-image.banner--image-start').css('background-image', 'url(images/arch_main1_mobile.jpg)');
       $('#fullscreen .image-container .bg-image.banner--image-end').css('background-image', 'url(images/arch_main2_mobile.jpg)');
-    } 
+    }
     
     $('#siteloader').css({width: windowWidth, height: windowHeight});
     $('#fullscreen, #fullscreen .bg-image').css({'width': windowWidth, 'height': windowHeight, 'background-position': 'center center'});
