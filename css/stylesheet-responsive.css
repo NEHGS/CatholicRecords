@@ -19,8 +19,10 @@
   }
 
   .first-nav .nav-menu ul li > a {
+    border: 0 none;
     color: #ffffff;
     line-height: 40px;
+    margin: 0;
   }
 }
 

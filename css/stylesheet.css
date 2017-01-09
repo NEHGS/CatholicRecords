@@ -508,10 +508,10 @@ SOF Navigation Css
   width: auto;
 }
 
-.first-nav .nav-menu ul li > a {
+/*.first-nav .nav-menu ul li > a {
   color: #000000;
   line-height: 90px;
-}
+}*/
 
 .first-nav .nav-menu ul li > a:hover {
   color: #EFB049;
@@ -528,18 +528,21 @@ SOF Navigation Css
 
 .nav-menu ul li a {
   background: transparent none repeat scroll 0 0;
+  border-right: 1px solid #b88c2d;
+  color: #000000;
   display: inline-block;
   font-size: 11px;
-  height: 100%;
+  height: auto;
   letter-spacing: 0.2px;
-  line-height: 90px;
-  padding: 0 10px 0 0;
+  line-height: 22px;
+  margin: 35px 0 0;
+  padding: 0 8px;
   position: relative;
   transition: all 0.5s ease 0s;
 }
 
 .nav-menu ul li:last-child a {
-  padding: 0;
+  border: 0 none;
 }
 
 .first-nav .nav-menu ul li a:hover {
