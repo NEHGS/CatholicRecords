@@ -176,13 +176,19 @@ $(document).ready(function () {
 
 (function ($) {
   $(document).ready(function () {
-  
+ 
     //Js for loader
     $("#siteloader").show().delay(1000).fadeOut();
 
 
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
+    
+    //Js to show or hide desktop/Mobile version banner images
+    if (windowWidth <= 480) {
+      $('#fullscreen .image-container .bg-image.banner--image-start').css('background-image', 'url(images/arch_main1_mobile.jpg)');
+      $('#fullscreen .image-container .bg-image.banner--image-end').css('background-image', 'url(images/arch_main2_mobile.jpg)');
+    } 
 
     $('#fullscreen, #fullscreen .bg-image, #siteloader').css({width: windowWidth, height: windowHeight});
 
@@ -385,6 +391,13 @@ $(document).ready(function () {
     $(window).on("resize", function () {
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
+    
+    //Js to show or hide desktop/Mobile version banner images
+    if (windowWidth <= 480) {
+      $('#fullscreen .image-container .bg-image.banner--image-start').css('background-image', 'url(images/arch_main1_mobile.jpg)');
+      $('#fullscreen .image-container .bg-image.banner--image-end').css('background-image', 'url(images/arch_main2_mobile.jpg)');
+    } 
+    
     $('#siteloader').css({width: windowWidth, height: windowHeight});
     $('#fullscreen, #fullscreen .bg-image').css({'width': windowWidth, 'height': windowHeight, 'background-position': 'center center'});
     var navHeight = $(window).height() - 90;

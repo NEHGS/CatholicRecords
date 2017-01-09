@@ -403,13 +403,13 @@ SOF Navigation Css
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  width: auto;
+  width: 320px;
 }
 .navigation .logo img {
   height: auto;
   max-height: 55px;
   transition: all 0.5s ease 0s;
-  width: auto;
+  width: 100%;
 }
 
 .mobile-nav-button {
@@ -527,9 +527,13 @@ SOF Navigation Css
   height: 100%;
   letter-spacing: 0.2px;
   line-height: 90px;
-  padding: 0 10px;
+  padding: 0 10px 0 0;
   position: relative;
   transition: all 0.5s ease 0s;
+}
+
+.nav-menu ul li:last-child a {
+  padding: 0;
 }
 
 .first-nav .nav-menu ul li a:hover {
