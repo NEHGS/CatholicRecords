@@ -636,7 +636,7 @@ SOF Introduction Section Css
   background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../images/project-saint-icon.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 75% auto;
+  background-size: 100% auto;
   max-height: 500px;
   overflow-y: scroll;
 }
