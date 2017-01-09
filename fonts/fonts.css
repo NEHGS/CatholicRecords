@@ -2,52 +2,52 @@
 
 @font-face {
     font-family: 'OpenSans-Light';
-    src: url('Open_Sans/OpenSans-Light.ttf');
+    src: url('/fonts/Open_Sans/OpenSans-Light.ttf');
 }
 
 @font-face {
     font-family: 'OpenSans-LightItalic';
-    src: url('Open_Sans/OpenSans-LightItalic.ttf');
+    src: url('/fonts/Open_Sans/OpenSans-LightItalic.ttf');
 }
 
 @font-face {
     font-family: 'OpenSans-Regular';
-    src: url('Open_Sans/OpenSans-Regular.ttf');
+    src: url('/fonts/Open_Sans/OpenSans-Regular.ttf');
 }
 
 @font-face {
     font-family: 'OpenSans-Italic';
-    src: url('Open_Sans/OpenSans-Italic.ttf');
+    src: url('/fonts/Open_Sans/OpenSans-Italic.ttf');
 }
 
 @font-face {
     font-family: 'OpenSans-Semibold';
-    src: url('Open_Sans/OpenSans-Semibold.ttf');
+    src: url('/fonts/Open_Sans/OpenSans-Semibold.ttf');
 }
 
 @font-face {
     font-family: 'OpenSans-SemiboldItalic';
-    src: url('Open_Sans/OpenSans-SemiboldItalic.ttf');
+    src: url('/fonts/Open_Sans/OpenSans-SemiboldItalic.ttf');
 }
 
 @font-face {
     font-family: 'OpenSans-Bold';
-    src: url('Open_Sans/OpenSans-Bold.ttf');
+    src: url('/fonts/Open_Sans/OpenSans-Bold.ttf');
 }
 
 @font-face {
     font-family: 'OpenSans-BoldItalic';
-    src: url('Open_Sans/OpenSans-BoldItalic.ttf');
+    src: url('/fonts/Open_Sans/OpenSans-BoldItalic.ttf');
 }
 
 @font-face {
     font-family: 'OpenSans-ExtraBold';
-    src: url('Open_Sans/OpenSans-ExtraBold.ttf');
+    src: url('/fonts/Open_Sans/OpenSans-ExtraBold.ttf');
 }
 
 @font-face {
     font-family: 'OpenSans-ExtraBoldItalic';
-    src: url('Open_Sans/OpenSans-ExtraBoldItalic.ttf');
+    src: url('/fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf');
 }
 
 /*-------Open Sans Condensed-------*/
