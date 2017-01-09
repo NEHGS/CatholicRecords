@@ -1240,7 +1240,7 @@ EOF Footer css
 
 /* Arrow bounce */
 
-@import "compass/css3";
+/* @import "compass/css3"; */
 
 .arrow {
   position: absolute;
