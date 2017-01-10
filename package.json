@@ -1,5 +1,8 @@
 {
-	"scripts": {
-		"gulp": "gulp"
-	}
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "devDependencies": {
+    "gulp-imagemin": "^3.1.1"
+  }
 }

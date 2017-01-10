@@ -3,12 +3,13 @@ var cleanCSS = require('gulp-clean-css');
 var useref = require('gulp-useref');
 var gulpif = require('gulp-if');
 var uglify = require('gulp-uglify');
+var imagemin = require('gulp-imagemin');
 
-gulp.task('minify-css', function() {
-    return gulp.src('css/*.css')
-      .pipe(concatCSS('css/bundle.css'))
-      .pipe(cleanCSS())
-      .pipe(gulp.dest(''));
+gulp.task('img-compress', function() {
+    return gulp.src('images/*',
+    	{base: '.images/'})
+      .pipe(imagemin())
+      .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('useref', function() {
@@ -18,3 +19,5 @@ gulp.task('useref', function() {
 	  .pipe(gulpif('*.js', uglify()))
 	  .pipe(gulp.dest('dist'));
 });
+
+gulp.task('default', ['img-compress', 'useref']);
