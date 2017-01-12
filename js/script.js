@@ -215,7 +215,9 @@ $(document).ready(function () {
 
     //Nav section scroll
     $('#navigation .nav-menu ul li a').click(function (e) {
-      e.preventDefault();
+      if ($(this).attr('href').indexOf('www') == -1) {
+        e.preventDefault();
+      }
       $('#navigation .nav-menu ul li a.active').removeClass('active');
       $(this).addClass('active');
       var getID = '#' + $(this).attr('name');
