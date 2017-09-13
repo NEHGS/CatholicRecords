@@ -4,26 +4,26 @@
     "lat": "42.340751",
     "lng": "-71.069451",
     "name": "Holy Trinity",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Holy Trinity</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1836<br></span><span class=\"label\">Church built in </span><span class=\"value\">1877</span><span class=\"label\">, closed in </span><span class=\"value\">2008</span></div><div class=\"field\"><span class=\"value\">1400 Washington Street, Boston, MA, 02118</span></div><div class=\"browse-record-wrapper\"><h5>Browse Parish records:</h5><a href=\"https://www.americanancestors.org/HolyTrinityBoston\" target=\"_blank\">https://www.americanancestors.org/HolyTrinityBoston</a></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Holy Trinity</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1836<br></span><span class=\"label\">Church built in </span><span class=\"value\">1877</span><span class=\"label\">, closed in </span><span class=\"value\">2008</span></div><div class=\"field\"><span class=\"value\">1400 Washington Street, Boston, MA, 02118</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/databases/massachusetts-image-only-roman-catholic-archdiocese-of-boston-records-1789-1900/image/?pageName=Index&volumeId=46089\" target=\"_blank\">Browse parish records</a></h5></div></div></div>"
   },
   {
     "year": "1788",
     "lat": "42.355417",
     "lng": "-71.058853",
     "name": "Cathedral of the Holy Cross",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Cathedral of the Holy Cross</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1788<br></span><span class=\"label\">Church built in </span><span class=\"value\">1803</span>, <span class=\"label\"> closed in </span><span class=\"value\">1859</span></div><div class=\"field\"><span class=\"value\">49 Franklin Street, Boston, MA 02110</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/search/advanced-search?database=Massachusetts:%20Roman%20Catholic%20Archdiocese%20of%20Boston%20Records,%201789-1900\" target=\"_blank\">Browse parish records</a></h5></div></div></div>"  },
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Cathedral of the Holy Cross</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1788<br></span><span class=\"label\">Church built in </span><span class=\"value\">1803</span>, <span class=\"label\"> closed in </span><span class=\"value\">1859</span></div><div class=\"field\"><span class=\"value\">49 Franklin Street, Boston, MA 02110</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/search/advanced-search?database=Massachusetts:%20Roman%20Catholic%20Archdiocese%20of%20Boston%20Records,%201789-1900\" target=\"_blank\">Search parish records</a></h5></div></div></div>"  },
   {
     "year": "1826",
     "lat": "42.521431",
     "lng": "-70.890294",
     "name": "Immaculate Conception",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Immaculate Conception</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1826</span></div><div class=\"field\"><span class=\"value\">15 Hawthorne Boulevard, Salem, MA 01970 (then Walnut Street) </span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/search/advanced-search?database=Massachusetts:%20Roman%20Catholic%20Archdiocese%20of%20Boston%20Records,%201789-1900\" target=\"_blank\">Browse parish records</a></h5></div></div></div>"  },
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Immaculate Conception</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1826</span></div><div class=\"field\"><span class=\"value\">15 Hawthorne Boulevard, Salem, MA 01970 (then Walnut Street) </span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/search/advanced-search?database=Massachusetts:%20Roman%20Catholic%20Archdiocese%20of%20Boston%20Records,%201789-1900\" target=\"_blank\">Search parish records</a></h5></div></div></div>"  },
   {
     "year": "1828",
     "lat": "42.37412",
     "lng": "71.061543",
     "name": "Saint Mary",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Mary</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1828<br></span><span class=\"label\">Church built in </span><span class=\"value\"></span>, <span class=\"label\"> closed in </span><span class=\"value\">2006</span></div><div class=\"field\"><span class=\"value\">150 Rutherford Ave, Charlestown, MA 02129 (then Richmond St) \n55 Warren St,  Charlestown, MA 02129\n</span></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Mary</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1828<br></span><span class=\"label\">Church built in </span><span class=\"value\"></span>, <span class=\"label\"> closed in </span><span class=\"value\">2006</span></div><div class=\"field\"><span class=\"value\">150 Rutherford Ave, Charlestown, MA 02129 (then Richmond St) \n55 Warren St,  Charlestown, MA 02129\n</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/databases/massachusetts-image-only-roman-catholic-archdiocese-of-boston-records-1789-1900/image/?rId=1212580009&volumeId=48466\" target=\"_blank\">Browse parish records</a></h5></div></div></div>"
   },
   {
     "year": "1831",
@@ -58,7 +58,7 @@
     "lat": "42.378086",
     "lng": "-71.237475",
     "name": "Saint Mary",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Mary</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1839<br></span><span class=\"label\">Church built in </span><span class=\"value\">1958</span></div><div class=\"field\"><span class=\"value\">133 School St, Waltham, MA. 02451</span></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Mary</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1839<br></span><span class=\"label\">Church built in </span><span class=\"value\">1958</span></div><div class=\"field\"><span class=\"value\">133 School St, Waltham, MA. 02451</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/databases/massachusetts-image-only-roman-catholic-archdiocese-of-boston-records-1789-1900/image/?rId=1212580009&volumeId=48498\" target=\"_blank\">Browse parish records</a></h5></div></div></div>"
   },
   {
     "year": "1840",
@@ -79,7 +79,7 @@
     "lat": "42.37079",
     "lng": "-71.084995",
     "name": "Saint John/Sacred Heart of Jesus",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint John/Sacred Heart of Jesus</h4><div class=\"field\"><span class=\"label\">Parish and church established in </span><span class=\"value\">1842</span></div><div class=\"field\"><span class=\"value\">47 Sixth St\nCambridge, MA 02141</span></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint John/Sacred Heart of Jesus</h4><div class=\"field\"><span class=\"label\">Parish and church established in </span><span class=\"value\">1842</span></div><div class=\"field\"><span class=\"value\">47 Sixth St\nCambridge, MA 02141</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/search/advanced-search?database=Massachusetts:%20Roman%20Catholic%20Archdiocese%20of%20Boston%20Records,%201789-1900\" target=\"_blank\">Search parish records</a></h5></div></div></div>"
   },
   {
     "year": "1843",
@@ -107,14 +107,14 @@
     "lat": "42.324354",
     "lng": "-71.086099",
     "name": "Saint Joseph",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Joseph</h4><div class=\"field\"><span class=\"label\">Parish and church established in </span><span class=\"value\">1845</span></div><div class=\"field\"><span class=\"value\">58 Regent St Boston, MA 02119</span></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Joseph</h4><div class=\"field\"><span class=\"label\">Parish and church established in </span><span class=\"value\">1845</span></div><div class=\"field\"><span class=\"value\">58 Regent St Boston, MA 02119</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/search/advanced-search?database=Massachusetts:%20Roman%20Catholic%20Archdiocese%20of%20Boston%20Records,%201789-1900\" target=\"_blank\">Search parish records</a></h5></div></div></div>"
   },
   {
     "year": "1847",
     "lat": "42.322137",
     "lng": "-71.394249",
     "name": "Saint George",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint George</h4><div class=\"field\"><span class=\"label\">Parish and church established in </span><span class=\"value\">1847</span></div><div class=\"field\"><span class=\"value\">74 School St Framingham, MA 0170</span></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint George</h4><div class=\"field\"><span class=\"label\">Parish and church established in </span><span class=\"value\">1847</span></div><div class=\"field\"><span class=\"value\">74 School St Framingham, MA 0170</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/databases/massachusetts-image-only-roman-catholic-archdiocese-of-boston-records-1789-1900/image/?rId=1212580009&volumeId=48572\" target=\"_blank\">Browse parish records</a></h5></div></div></div>"
   },
   {
     "year": "1847",
@@ -226,14 +226,13 @@
     "lat": "42.336766",
     "lng": "-71.072862",
     "name": "Immaculate Conception",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Immaculate Conception</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1858<br></span><span class=\"label\">Church built in </span><span class=\"value\">1861</span><span class=\"label\">, closed in </span><span class=\"value\">2007</span></div><div class=\"field\"><span class=\"value\">771 Harrison Ave, Boston</span></div><div class=\"browse-record-wrapper\"><h5>Browse Parish records:</h5><a href=\"https://www.americanancestors.org/ImmaculateConceptionBoston\" target=\"_blank\">https://www.americanancestors.org/ImmaculateConceptionBoston</a></div></div></div>"
-  },
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Immaculate Conception</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1858<br></span><span class=\"label\">Church built in </span><span class=\"value\">1861</span><span class=\"label\">, closed in </span><span class=\"value\">2007</span></div><div class=\"field\"><span class=\"value\">771 Harrison Ave, Boston</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/search/advanced-search?database=Massachusetts:%20Roman%20Catholic%20Archdiocese%20of%20Boston%20Records,%201789-1900\" target=\"_blank\">Search parish records</a></h5></div></div></div>"  },
   {
     "year": "1854",
     "lat": "42.350333",
     "lng": "-71.062124",
     "name": "Saint James the Greater",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint James the Greater</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1854</span></div><div class=\"field\"><span class=\"value\">125 Harrison Ave, Boston, MA 02111</span></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint James the Greater</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1854</span></div><div class=\"field\"><span class=\"value\">125 Harrison Ave, Boston, MA 02111</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/databases/massachusetts-image-only-roman-catholic-archdiocese-of-boston-records-1789-1900/image/?rId=1212580009&volumeId=48383\" target=\"_blank\">Browse parish records</a></h5></div></div></div>"
   },
   {
     "year": "1854",
@@ -282,7 +281,7 @@
     "lat": "42.284796",
     "lng": "-71.343958",
     "name": "Saint Patrick",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Patrick</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1858</span></div><div class=\"field\"><span class=\"value\">44 E Central St, Natick, MA 01760, USA</span></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Patrick</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1858</span></div><div class=\"field\"><span class=\"value\">44 E Central St, Natick, MA 01760, USA</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/databases/massachusetts-image-only-roman-catholic-archdiocese-of-boston-records-1789-1900/image/?rId=1212580009&volumeId=48575\" target=\"_blank\">Browse parish records</a></h5></div></div></div>"
   },
   {
     "year": "1859",
@@ -723,7 +722,7 @@
     "lat": "42.348998",
     "lng": "-71.070238",
     "name": "Our Lady of Victories",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Our Lady of Victories</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1880<br><span class=\"label\">Closed in </span><span class=\"value\">2016</span></div><div class=\"field\"><span class=\"value\">27 Isabella St, Boston, MA 02116</span></div><div class=\"browse-record-wrapper\"><h5>Browse Parish records:</h5><a href=\"https://www.americanancestors.org/LadyOfVictoriesBoston\" target=\"_blank\">https://www.americanancestors.org/LadyOfVictoriesBoston</a></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Our Lady of Victories</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1880<br><span class=\"label\">Closed in </span><span class=\"value\">2016</span></div><div class=\"field\"><span class=\"value\">27 Isabella St, Boston, MA 02116</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/databases/massachusetts-image-only-roman-catholic-archdiocese-of-boston-records-1789-1900/image/?rId=1212580009&volumeId=46106\" target=\"_blank\">Browse parish records</a></h5></div></div></div>"
   },
   {
     "year": "1880",
@@ -835,7 +834,7 @@
     "lat": "42.373967",
     "lng": "-71.061543",
     "name": "Saint Catherine of Siena",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Catherine of Siena</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1887<br><span class=\"label\">Closed in </span><span class=\"value\">2006</span></div><div class=\"field\"><span class=\"value\">55 Warren St, Charlestown</span></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Catherine of Siena</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1887<br><span class=\"label\">Closed in </span><span class=\"value\">2006</span></div><div class=\"field\"><span class=\"value\">55 Warren St, Charlestown</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/databases/massachusetts-image-only-roman-catholic-archdiocese-of-boston-records-1789-1900/image/?rId=1212580009&volumeId=48544\" target=\"_blank\">Browse parish records</a></h5></div></div></div>"
   },
   {
     "year": "1887",
@@ -856,14 +855,14 @@
     "lat": "42.363921",
     "lng": "-71.053089",
     "name": "Sacred Heart",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Sacred Heart</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1888<br><span class=\"label\">Closed in </span><span class=\"value\">2004</span></div><div class=\"field\"><span class=\"value\">2 N Square, Boston, MA 02113</span></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Sacred Heart</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1888<br><span class=\"label\">Closed in </span><span class=\"value\">2004</span></div><div class=\"field\"><span class=\"value\">2 N Square, Boston, MA 02113</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/databases/massachusetts-image-only-roman-catholic-archdiocese-of-boston-records-1789-1900/image/?rId=1212580009&volumeId=46408\" target=\"_blank\">Browse parish records</a></h5></div></div></div>"
   },
   {
     "year": "1888",
     "lat": "42.346503",
     "lng": "-71.086162",
     "name": "Saint Cecilia",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Cecilia</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1888</span></div><div class=\"field\"><span class=\"value\">18 Belvidere St, Boston, MA 02115</span></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Cecilia</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1888</span></div><div class=\"field\"><span class=\"value\">18 Belvidere St, Boston, MA 02115</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/search/advanced-search?database=Massachusetts:%20Roman%20Catholic%20Archdiocese%20of%20Boston%20Records,%201789-1900\" target=\"_blank\">Search parish records</a></h5></div></div></div>"
   },
   {
     "year": "1888",
@@ -877,7 +876,7 @@
     "lat": "42.290153",
     "lng": "-71.049017",
     "name": "Saint Ann",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Ann</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1889</span></div><div class=\"field\"><span class=\"value\">243 Neponset Ave, Dorchester, MA 02122</span></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Ann</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1889</span></div><div class=\"field\"><span class=\"value\">243 Neponset Ave, Dorchester, MA 02122</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/databases/massachusetts-image-only-roman-catholic-archdiocese-of-boston-records-1789-1900/image/?rId=1212580009&volumeId=48543\" target=\"_blank\">Browse parish records</a></h5></div></div></div>"
   },
   {
     "year": "1889",
@@ -975,7 +974,7 @@
     "lat": "42.281839",
     "lng": "-71.122971",
     "name": "Sacred Heart",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Sacred Heart</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1893</span></div><div class=\"field\"><span class=\"value\">169 Cummins Hwy, Roslindale, MA</span></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Sacred Heart</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1893</span></div><div class=\"field\"><span class=\"value\">169 Cummins Hwy, Roslindale, MA</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/search/advanced-search?database=Massachusetts:%20Roman%20Catholic%20Archdiocese%20of%20Boston%20Records,%201789-1900\" target=\"_blank\">Search parish records</a></h5></div></div></div>"
   },
   {
     "year": "1893",
@@ -1052,7 +1051,7 @@
     "lat": "42.279451",
     "lng": "-71.158949",
     "name": "Saint Theresa of Avila",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Theresa of Avila</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1895</span></div><div class=\"field\"><span class=\"value\">2078 Centre St. West Roxbury MA 02132</span></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Saint Theresa of Avila</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1895</span></div><div class=\"field\"><span class=\"value\">2078 Centre St. West Roxbury MA 02132</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/databases/massachusetts-image-only-roman-catholic-archdiocese-of-boston-records-1789-1900/image/?rId=1212580009&volumeId=48166\" target=\"_blank\">Browse parish records</a></h5></div></div></div>"
   },
   {
     "year": "1895",
