@@ -51,7 +51,7 @@
     "lat": "42.345897",
     "lng": "-71.065861",
     "name": "Holy Trinity",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Holy Trinity</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1836<br></span><span class=\"label\">Church built in </span><span class=\"value\">1844</span><span class=\"label\">, closed in </span><span class=\"value\">1877</span></div><div class=\"field\"><span class=\"value\">136 Shawmut Avenue, Boston, MA, 02118</span></div><div class=\"browse-record-wrapper\"><h5>Browse Parish records:</h5><a href=\"https://www.americanancestors.org/HolyTrinityBoston\" target=\"_blank\">https://www.americanancestors.org/HolyTrinityBoston</a></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Holy Trinity</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1836<br></span><span class=\"label\">Church built in </span><span class=\"value\">1844</span><span class=\"label\">, closed in </span><span class=\"value\">1877</span></div><div class=\"field\"><span class=\"value\">136 Shawmut Avenue, Boston, MA, 02118</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/HolyTrinityBoston\" target=\"_blank\">Browse parish records</a></h5></div></div></div>"
   },
   {
     "year": "1839",
@@ -428,7 +428,7 @@
     "lat": "42.34075",
     "lng": "-71.069451",
     "name": "Cathedral of the Holy Cross",
-    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Cathedral of the Holy Cross</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1866</span></div><div class=\"field\"><span class=\"value\">1400 Washington St, Boston, MA 02118</span></div><div class=\"browse-record-wrapper\"><h5>Browse Parish records:</h5><a href=\"https://www.americanancestors.org/HolyCrossBoston\" target=\"_blank\">https://www.americanancestors.org/HolyCrossBoston</a></div></div></div>"
+    "description": "<div id=\"popup-box\"><div class=\"popup-box left-box\"><img src=\"map_images/popup_church.png\"/></div><div class=\"popup-box right-box\"><h4 class=\"popup-title\">Cathedral of the Holy Cross</h4><div class=\"field\"><span class=\"label\">Parish established in </span><span class=\"value\">1866</span></div><div class=\"field\"><span class=\"value\">1400 Washington St, Boston, MA 02118</span></div><div class=\"browse-record-wrapper\"><h5><a href=\"https://www.americanancestors.org/HolyCrossBoston\" target=\"_blank\">Browse parish records</a></h5></div></div></div>"
   },
   {
     "year": "1867",
