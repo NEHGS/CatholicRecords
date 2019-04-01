@@ -20,4 +20,5 @@ gulp.task('useref', function() {
 	  .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['img-compress', 'useref']);
+gulp.task('default', gulp.parallel('useref', 'img-compress'));
+//gulp.task('default', ['img-compress', 'useref']);
