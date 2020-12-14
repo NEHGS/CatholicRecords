@@ -20,5 +20,9 @@ gulp.task('useref', function() {
 	  .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', gulp.parallel('useref', 'img-compress'));
-//gulp.task('default', ['img-compress', 'useref']);
+gulp.task('fonts', function() {
+	return gulp.src('fonts/*')
+	  .pipe(gulp.dest('dist/fonts'));
+});
+
+gulp.task('default', gulp.parallel('useref', 'fonts', 'img-compress'));
