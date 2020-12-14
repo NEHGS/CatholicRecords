@@ -6,7 +6,7 @@ var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 
 gulp.task('img-compress', function() {
-    return gulp.src('images/*',
+    return gulp.src('images/**',
     	{base: '.images/'})
       .pipe(imagemin())
       .pipe(gulp.dest('dist/images'));
