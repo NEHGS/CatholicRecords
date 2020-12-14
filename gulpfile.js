@@ -21,7 +21,7 @@ gulp.task('useref', function() {
 });
 
 gulp.task('fonts', function() {
-	return gulp.src('fonts/*')
+	return gulp.src('fonts/**')
 	  .pipe(gulp.dest('dist/fonts'));
 });
 
