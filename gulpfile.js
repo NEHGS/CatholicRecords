@@ -25,4 +25,9 @@ gulp.task('fonts', function() {
 	  .pipe(gulp.dest('dist/fonts'));
 });
 
-gulp.task('default', gulp.parallel('useref', 'fonts', 'img-compress'));
+gulp.task('json', function() {
+	return gulp.src('json/**')
+	  .pipe(gulp.dest('dist/json'))
+});
+
+gulp.task('default', gulp.parallel('useref', 'fonts', 'json', 'img-compress'));
