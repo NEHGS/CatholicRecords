@@ -43,7 +43,7 @@ $(document).ready(function () {
         new google.maps.Size(21, 34),
         new google.maps.Point(0,0),
         new google.maps.Point(10, 34));
-    var marker = new google.maps.Marker({
+    var marker = new google.maps.AdvancedMarkerElement({
       map,
       position: location,
       title: title,
