@@ -18,6 +18,7 @@ $(document).ready(function () {
   var myOptions = {
     center: new google.maps.LatLng(42.324458, -72.001991),
     zoom: 8,
+    mapId: "CatholicMap",
     streetViewControl: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     disableDefaultUI: false,
@@ -43,8 +44,8 @@ $(document).ready(function () {
         new google.maps.Point(0,0),
         new google.maps.Point(10, 34));
     var marker = new google.maps.Marker({
+      map,
       position: location,
-      map: map,
       title: title,
       icon: pinImage,
     });

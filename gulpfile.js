@@ -1,9 +1,9 @@
-var gulp = require('gulp');
-var cleanCSS = require('gulp-clean-css');
-var useref = require('gulp-useref');
-var gulpif = require('gulp-if');
-var uglify = require('gulp-uglify');
-var imagemin = require('gulp-imagemin');
+import gulp from 'gulp';
+import cleanCSS from 'gulp-cleaner-css';
+import useref from 'gulp-useref';
+import gulpif from 'gulp-if'
+import uglify from 'gulp-uglify';
+import imagemin from 'gulp-imagemin';
 
 gulp.task('img-compress', function() {
     return gulp.src('images/**',

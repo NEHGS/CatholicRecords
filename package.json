@@ -1,13 +1,14 @@
 {
+  "type": "module",
   "scripts": {
     "gulp": "gulp"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.3.0",
+    "gulp": "^5.0.0",
+    "gulp-cleaner-css": "^4.3.2",
     "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^6.2.0",
+    "gulp-imagemin": "^9.1.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-useref": "^4.0.1"
+    "gulp-useref": "^3.1.3"
   }
 }
