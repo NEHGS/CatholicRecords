@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "gulp": "gulp"
+    "build": "npx gulp build"
   },
   "devDependencies": {
     "browser-sync": "^3.0.4",
