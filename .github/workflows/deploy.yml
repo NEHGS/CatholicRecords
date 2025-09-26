@@ -12,12 +12,11 @@ jobs:
         - name: Install dependencies
           run: npm ci
         - name: Gulp runner
-          run: gulp
+          run: npx gulp
         - name: Configure AWS credentials
           uses: aws-actions/configure-aws-credentials@v4
           with:
-            aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-            aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            role-to-assume: ${{ secrets.IAM_ROLE }}
             aws-region: us-east-1
         - name: Deploy to S3
           run: aws s3 sync dist s3://catholicrecords.americanancestors.org --acl public-read --delete
