@@ -34,9 +34,9 @@ export function clean() {
 	return deleteAsync(['dist/**', "!dist"]);
 }
 
-export async function images() {
+export function images() {
     return src('images/**',
-    	{base: './images/'})
+    	{base: './images/', encoding: false})
       .pipe(imagemin())
       .pipe(dest('dist/images'));
 }

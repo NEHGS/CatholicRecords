@@ -14,6 +14,23 @@
 
 // Show map locations.
 $(document).ready(function () {
+  // Intersection observer for logo
+  const logoElem = document.getElementById("aa-logo");
+  const homeElem = document.getElementById("home");
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      console.dir(entry);
+      if (entry.isIntersecting) {
+        logoElem.src = "images/logo-white.png";
+        console.log("yes");
+      } else {
+        logoElem.src = "images/logo.png";
+        console.log("no");
+      }
+    });
+  });
+  observer.observe(homeElem);
+
   // Initialize map and its options.
   var myOptions = {
     center: new google.maps.LatLng(42.324458, -72.001991),
