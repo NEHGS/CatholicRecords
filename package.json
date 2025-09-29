@@ -9,10 +9,10 @@
     "gulp": "^5.0.1",
     "gulp-cleaner-css": "^4.3.2",
     "gulp-if": "^3.0.0",
-    "gulp-uglify": "^3.0.2",
-    "imagemin": "^9.0.1"
+    "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
+    "gulp-imagemin": "^9.1.0",
     "gulp-useref": "^5.0.0",
     "useref": "^1.4.4"
   }

@@ -3,8 +3,8 @@ import cleanCSS from 'gulp-cleaner-css';
 import gulpif from 'gulp-if'
 import uglify from 'gulp-uglify';
 import useref from 'gulp-useref';
+import imagemin from 'gulp-imagemin';
 
-import imagemin from 'imagemin';
 import browserSyncLib from 'browser-sync';
 import { deleteAsync } from 'del';
 
@@ -35,15 +35,8 @@ export function clean() {
 }
 
 export async function images() {
-	const files = await imagemin(['images/**/*.{jpg,png,gif}'], {
-		destination: "dist/images"
-	});
-	return files;
-}
-
-export function imgCompress() {
     return src('images/**',
-    	{base: '.images/'})
+    	{base: './images/'})
       .pipe(imagemin())
       .pipe(dest('dist/images'));
 }
