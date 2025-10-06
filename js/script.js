@@ -12,26 +12,11 @@
     e.addTween(".introduction-effect", TweenMax.to($("#introduction"), .5, {backgroundColor: "rgb(255,255,255)"}), 600, -t);
 })(jQuery);
 
-// Show map locations.
-$(document).ready(function () {
-  // Intersection observer for logo
-  const logoElem = document.getElementById("aa-logo");
-  const homeElem = document.getElementById("home");
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      console.dir(entry);
-      if (entry.isIntersecting) {
-        logoElem.src = "images/logo-white.png";
-        console.log("yes");
-      } else {
-        logoElem.src = "images/logo.png";
-        console.log("no");
-      }
-    });
-  });
-  observer.observe(homeElem);
+let map, infoWindow;
 
-  // Initialize map and its options.
+async function initMap() {
+  const { Map, InfoWindow } = await google.maps.importLibrary("maps");
+    // Initialize map and its options.
   var myOptions = {
     center: new google.maps.LatLng(42.324458, -72.001991),
     zoom: 8,
@@ -49,22 +34,39 @@ $(document).ready(function () {
       }
     ]*/
   };
-  var map = new google.maps.Map(document.getElementById("map"),
+  map = new Map(document.getElementById("map"),
     myOptions);
+  // Global Infowindow shown on the map.
+  infowindow = new InfoWindow();
+}
+
+// Show map locations.
+$(document).ready(function () {
+  // Intersection observer for logo
+  const logoElem = document.getElementById("aa-logo");
+  const homeElem = document.getElementById("home");
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      console.dir(entry);
+      if (entry.isIntersecting) {
+        logoElem.src = "images/logo-white.png";
+      } else {
+        logoElem.src = "images/logo.png";
+      }
+    });
+  });
+  observer.observe(homeElem);
+
+  initMap();
 
   var markers = [];
   // Adds a marker to the map and push to the array.
-  function addMarker(location, title, map) {
-    var pinColor = "BD922D";
-    var pinImage = new google.maps.MarkerImage("https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor,
-        new google.maps.Size(21, 34),
-        new google.maps.Point(0,0),
-        new google.maps.Point(10, 34));
-    var marker = new google.maps.AdvancedMarkerElement({
+  async function addMarker(location, title, map) {
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    var marker = new AdvancedMarkerElement({
       map,
       position: location,
-      title: title,
-      icon: pinImage,
+      title: title
     });
     markers.push(marker);
     return marker;
@@ -92,10 +94,9 @@ $(document).ready(function () {
     clearMarkers(map);
     markers = [];
   }
-  // Global Infowindow shown on the map.
-  var infowindow = new google.maps.InfoWindow();
 
-  function setMarkers(map, locations, from, to) {
+
+  async function setMarkers(map, locations, from, to) {
     //console.log(markers);
     var marker, i;
     deleteMarkers(map);
@@ -111,7 +112,7 @@ $(document).ready(function () {
 
         latlngset = new google.maps.LatLng(lat, long);
 
-        var marker = addMarker(latlngset, title, map);
+        var marker = await addMarker(latlngset, title, map);
 
         google.maps.event.addListener(marker, 'click', (function (marker, content, infowindow) {
           return function () {

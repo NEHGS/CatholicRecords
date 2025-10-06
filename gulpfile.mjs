@@ -1,4 +1,4 @@
-import { src, dest, series, parallel } from 'gulp';
+import { src, dest, watch, series, parallel } from 'gulp';
 import cleanCSS from 'gulp-cleaner-css';
 import gulpif from 'gulp-if'
 import uglify from 'gulp-uglify';
@@ -65,6 +65,9 @@ export function serve() {
 			baseDir: 'dist'
 		}
 	})
+
+  watch("js/*.js", series(useRef, browserSync.reload));
+  watch("index.html", browserSync.reload);
 }
 
 export const build = series(
